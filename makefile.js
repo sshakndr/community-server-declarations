@@ -34,7 +34,7 @@ import {Readable} from "node:stream"
 /** @type {Config} */
 const config = {
   source: {
-    owner: "onlyoffice",
+    owner: "sshakndr",
     name: "community-server-declarations",
     branch: "src",
     file: "community-server.json"
