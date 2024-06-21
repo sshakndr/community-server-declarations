@@ -11,25 +11,7 @@
           "CalendarApi/Calendars and subscriptions"
         ],
         "summary": "Get calendars",
-        "description": "Returns a list of calendars with the events for the current user in the selected period.",
-        "parameters": [
-          {
-            "name": "startDate",
-            "in": "path",
-            "description": "Period start date",
-            "schema": {
-              "type": "object"
-            }
-          },
-          {
-            "name": "endDate",
-            "in": "path",
-            "description": "Period end date",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Returns a list of calendars with the events for the current user in the selected period."
       }
     },
     "/api/2.0/CalendarApi/calendar/{calendarId}/{startDate}/{endDate}": {
@@ -38,33 +20,7 @@
           "CalendarApi/Calendars and subscriptions"
         ],
         "summary": "Get calendar events",
-        "description": "Returns a calendar with the events for the current user in the selected period.",
-        "parameters": [
-          {
-            "name": "calendarId",
-            "in": "path",
-            "description": "Calendar ID",
-            "schema": {
-              "type": "object"
-            }
-          },
-          {
-            "name": "startDate",
-            "in": "path",
-            "description": "Period start date",
-            "schema": {
-              "type": "object"
-            }
-          },
-          {
-            "name": "endDate",
-            "in": "path",
-            "description": "Period end date",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Returns a calendar with the events for the current user in the selected period."
       }
     },
     "/api/2.0/CalendarApi/subscriptions": {
@@ -82,34 +38,14 @@
           "CalendarApi/Calendars and subscriptions"
         ],
         "summary": "Get a calendar by ID",
-        "description": "Returns the detailed information about a calendar with the ID specified in the request.\n\n**Note**: Please note that the list of events in the response will be empty.",
-        "parameters": [
-          {
-            "name": "calendarId",
-            "in": "path",
-            "description": "Calendar ID",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Returns the detailed information about a calendar with the ID specified in the request.\n\n**Note**: Please note that the list of events in the response will be empty."
       },
       "delete": {
         "tags": [
           "CalendarApi/Calendars and subscriptions"
         ],
         "summary": "Delete a calendar",
-        "description": "Deletes a calendar with the ID specified in the request.",
-        "parameters": [
-          {
-            "name": "calendarId",
-            "in": "path",
-            "description": "Calendar ID",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Deletes a calendar with the ID specified in the request."
       }
     },
     "/api/2.0/CalendarApi/{calendarId}/view": {
@@ -118,17 +54,7 @@
           "CalendarApi/Calendars and subscriptions"
         ],
         "summary": "Update the calendar view",
-        "description": "Updates the calendar display parameters specified in the request for the current user.\n\n**Note**: Please note that the list of events in the response will be empty.",
-        "parameters": [
-          {
-            "name": "calendarId",
-            "in": "path",
-            "description": "Calendar ID",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Updates the calendar display parameters specified in the request for the current user.\n\n**Note**: Please note that the list of events in the response will be empty."
       }
     },
     "/api/2.0/CalendarApi/{calendarId}/icalurl": {
@@ -137,17 +63,7 @@
           "CalendarApi/Calendars and subscriptions"
         ],
         "summary": "Get iCal link",
-        "description": "Returns a link to the iCal related to the calendar with the ID specified in the request.",
-        "parameters": [
-          {
-            "name": "calendarId",
-            "in": "path",
-            "description": "Calendar ID",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Returns a link to the iCal related to the calendar with the ID specified in the request."
       }
     },
     "/api/2.0/CalendarApi/{calendarId}/caldavurl": {
@@ -156,17 +72,7 @@
           "CalendarApi/Calendars and subscriptions"
         ],
         "summary": "Get CalDav link",
-        "description": "Returns a link to the CalDav related to the calendar with the ID specified in the request.",
-        "parameters": [
-          {
-            "name": "calendarId",
-            "in": "path",
-            "description": "Calendar ID",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Returns a link to the CalDav related to the calendar with the ID specified in the request."
       }
     },
     "/api/2.0/CalendarApi/{calendarId}/ical/{signature}": {
@@ -175,25 +81,7 @@
           "CalendarApi/Calendars and subscriptions"
         ],
         "summary": "Get the iCal feed",
-        "description": "Returns the iCal feed associated with the calendar by its ID and signagure specified in the request.\n\n**Note**: To get the feed, you need to use the method returning the iCal feed link (it will generate the necessary signature).",
-        "parameters": [
-          {
-            "name": "calendarId",
-            "in": "path",
-            "description": "Calendar ID",
-            "schema": {
-              "type": "object"
-            }
-          },
-          {
-            "name": "signature",
-            "in": "path",
-            "description": "Signature",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Returns the iCal feed associated with the calendar by its ID and signagure specified in the request.\n\n**Note**: To get the feed, you need to use the method returning the iCal feed link (it will generate the necessary signature)."
       }
     },
     "/api/2.0/CalendarApi/importIcs": {
@@ -236,17 +124,7 @@
           "CalendarApi/Tasks"
         ],
         "summary": "Delete a task",
-        "description": "Deletes a task with the ID specified in the request.",
-        "parameters": [
-          {
-            "name": "todoId",
-            "in": "path",
-            "description": "Task ID",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Deletes a task with the ID specified in the request."
       }
     },
     "/api/2.0/CalendarApi/outsideevent": {
@@ -273,17 +151,7 @@
           "CalendarApi/Events"
         ],
         "summary": "Delete the event series",
-        "description": "Deletes the event series from the calendar.",
-        "parameters": [
-          {
-            "name": "eventId",
-            "in": "path",
-            "description": "Event ID",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Deletes the event series from the calendar."
       }
     },
     "/api/2.0/CalendarApi/events/{eventId}/custom": {
@@ -292,17 +160,7 @@
           "CalendarApi/Events"
         ],
         "summary": "Delete the specified event(s) from event series",
-        "description": "Deletes the specified event(s) from the series of repeating events.",
-        "parameters": [
-          {
-            "name": "eventId",
-            "in": "path",
-            "description": "Event ID",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Deletes the specified event(s) from the series of repeating events."
       }
     },
     "/api/2.0/CalendarApi/events/{eventId}/unsubscribe": {
@@ -311,17 +169,7 @@
           "CalendarApi/Events"
         ],
         "summary": "Unsubscribe from the event",
-        "description": "Unsubscribes the current user from the event with the ID specified in the request.",
-        "parameters": [
-          {
-            "name": "eventId",
-            "in": "path",
-            "description": "Event ID",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Unsubscribes the current user from the event with the ID specified in the request."
       }
     },
     "/api/2.0/CalendarApi/events/{eventUid}/historybyuid": {
@@ -330,17 +178,7 @@
           "CalendarApi/Events"
         ],
         "summary": "Get the iCal event by UID",
-        "description": "Returns the iCal event by its UID from the history.",
-        "parameters": [
-          {
-            "name": "eventUid",
-            "in": "path",
-            "description": "Event UID",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Returns the iCal event by its UID from the history."
       }
     },
     "/api/2.0/CalendarApi/events/{eventId}/historybyid": {
@@ -349,17 +187,7 @@
           "CalendarApi/Events"
         ],
         "summary": "Get the iCal event by ID",
-        "description": "Returns the iCal event by its ID from the history.",
-        "parameters": [
-          {
-            "name": "eventId",
-            "in": "path",
-            "description": "Event ID",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Returns the iCal event by its ID from the history."
       }
     },
     "/api/2.0/CalendarApi/{calendarId}/sharing": {
@@ -368,17 +196,7 @@
           "CalendarApi/Calendars and subscriptions"
         ],
         "summary": "Get access parameters",
-        "description": "Returns the sharing access parameters of the calendar with the ID specified in the request.",
-        "parameters": [
-          {
-            "name": "calendarId",
-            "in": "path",
-            "description": "Calendar ID",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Returns the sharing access parameters of the calendar with the ID specified in the request."
       }
     },
     "/api/2.0/CalendarApi/sharing": {
@@ -396,34 +214,14 @@
           "community/Wiki"
         ],
         "summary": "Update a page",
-        "description": "Updates a wiki page with the name and content specified in the request.",
-        "parameters": [
-          {
-            "name": "name",
-            "in": "path",
-            "description": "New page name",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Updates a wiki page with the name and content specified in the request."
       },
       "delete": {
         "tags": [
           "community/Wiki"
         ],
         "summary": "Delete a page",
-        "description": "Deletes a wiki page with the name specified in the request.",
-        "parameters": [
-          {
-            "name": "name",
-            "in": "path",
-            "description": "Page name",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Deletes a wiki page with the name specified in the request."
       }
     },
     "/api/2.0/community/wiki/{page}/comment": {
@@ -432,34 +230,14 @@
           "community/Wiki"
         ],
         "summary": "Create a page comment",
-        "description": "Creates a comment on the selected wiki page with the content specified in the request.",
-        "parameters": [
-          {
-            "name": "page",
-            "in": "path",
-            "description": "Page name",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Creates a comment on the selected wiki page with the content specified in the request."
       },
       "get": {
         "tags": [
           "community/Wiki"
         ],
         "summary": "Get page comments",
-        "description": "Returns a list of all the comments on the wiki page with the name specified in the request.",
-        "parameters": [
-          {
-            "name": "page",
-            "in": "path",
-            "description": "Page name",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Returns a list of all the comments on the wiki page with the name specified in the request."
       }
     },
     "/api/2.0/community/wiki/file/{name}": {
@@ -468,34 +246,14 @@
           "community/Wiki"
         ],
         "summary": "Get a file",
-        "description": "Returns the detailed information about a file with the name specified in the request from the wiki page 'Files' section.",
-        "parameters": [
-          {
-            "name": "name",
-            "in": "path",
-            "description": "File name",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Returns the detailed information about a file with the name specified in the request from the wiki page 'Files' section."
       },
       "delete": {
         "tags": [
           "community/Wiki"
         ],
         "summary": "Delete a file",
-        "description": "Deletes a file with the name specified in the request from the wiki page 'Files' section.",
-        "parameters": [
-          {
-            "name": "name",
-            "in": "path",
-            "description": "File name",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Deletes a file with the name specified in the request from the wiki page 'Files' section."
       }
     },
     "/api/2.0/community/wiki/comment/preview": {
@@ -513,34 +271,14 @@
           "community/Wiki"
         ],
         "summary": "Remove a comment",
-        "description": "Removes a comment with the ID specified in the request.",
-        "parameters": [
-          {
-            "name": "commentid",
-            "in": "path",
-            "description": "Comment ID",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Removes a comment with the ID specified in the request."
       },
       "put": {
         "tags": [
           "community/Wiki"
         ],
         "summary": "Update a comment",
-        "description": "Updates a comment on the selected wiki page with the content specified in the request.",
-        "parameters": [
-          {
-            "name": "commentid",
-            "in": "path",
-            "description": "Comment ID",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Updates a comment on the selected wiki page with the content specified in the request."
       }
     },
     "/api/2.0/community/wiki/comment": {
@@ -574,51 +312,21 @@
           "community/Blogs"
         ],
         "summary": "Update a post",
-        "description": "Updates the selected post changing the post title, content or/and tags specified in the request.",
-        "parameters": [
-          {
-            "name": "postid",
-            "in": "path",
-            "description": "Post ID",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Updates the selected post changing the post title, content or/and tags specified in the request."
       },
       "delete": {
         "tags": [
           "community/Blogs"
         ],
         "summary": "Delete a post",
-        "description": "Deletes a post with the ID specified in the request from blogs.",
-        "parameters": [
-          {
-            "name": "postid",
-            "in": "path",
-            "description": "Post ID",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Deletes a post with the ID specified in the request from blogs."
       },
       "get": {
         "tags": [
           "community/Blogs"
         ],
         "summary": "Get a post",
-        "description": "Returns the detailed information on the blog post with the ID specified in the request.",
-        "parameters": [
-          {
-            "name": "postid",
-            "in": "path",
-            "description": "Post ID",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Returns the detailed information on the blog post with the ID specified in the request."
       }
     },
     "/api/2.0/community/blog/@self": {
@@ -636,17 +344,7 @@
           "community/Blogs"
         ],
         "summary": "Search posts",
-        "description": "Returns a list of blog posts matching the search query specified in the request with the post titles, dates of creation and update, post texts, and authors.",
-        "parameters": [
-          {
-            "name": "query",
-            "in": "path",
-            "description": "Search query",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Returns a list of blog posts matching the search query specified in the request with the post titles, dates of creation and update, post texts, and authors."
       }
     },
     "/api/2.0/community/blog/user/{username}": {
@@ -655,17 +353,7 @@
           "community/Blogs"
         ],
         "summary": "Get user posts",
-        "description": "Returns a list of blog posts for the specified user with the post titles, dates of creation and update and post texts.",
-        "parameters": [
-          {
-            "name": "username",
-            "in": "path",
-            "description": "User name",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Returns a list of blog posts for the specified user with the post titles, dates of creation and update and post texts."
       }
     },
     "/api/2.0/community/blog/tag/{tag}": {
@@ -674,17 +362,7 @@
           "community/Blogs"
         ],
         "summary": "Get posts by tag",
-        "description": "Returns a list of blog posts containing the tag specified in the request with the post titles, dates of creation and update, post texts, and authors.",
-        "parameters": [
-          {
-            "name": "tag",
-            "in": "path",
-            "description": "Tag name",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Returns a list of blog posts containing the tag specified in the request with the post titles, dates of creation and update, post texts, and authors."
       }
     },
     "/api/2.0/community/blog/tag": {
@@ -702,34 +380,14 @@
           "community/Blogs"
         ],
         "summary": "Get post comments",
-        "description": "Returns a list of all the comments on the blog post with the ID specified in the request.",
-        "parameters": [
-          {
-            "name": "postid",
-            "in": "path",
-            "description": "Post ID (GUID)",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Returns a list of all the comments on the blog post with the ID specified in the request."
       },
       "post": {
         "tags": [
           "community/Blogs"
         ],
         "summary": "Add a post comment",
-        "description": "Adds a comment to the post with the ID specified in the request. The parent comment ID can be also specified if needed.\n\n**Note**: Send parentId=00000000-0000-0000-0000-000000000000 or don't send it at all if you want your comment to be on the root level.",
-        "parameters": [
-          {
-            "name": "postid",
-            "in": "path",
-            "description": "Post ID",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Adds a comment to the post with the ID specified in the request. The parent comment ID can be also specified if needed.\n\n**Note**: Send parentId=00000000-0000-0000-0000-000000000000 or don't send it at all if you want your comment to be on the root level."
       }
     },
     "/api/2.0/community/blog/comment/preview": {
@@ -747,34 +405,14 @@
           "community/Blogs"
         ],
         "summary": "Remove a comment",
-        "description": "Removes a comment with the ID specified in the request.",
-        "parameters": [
-          {
-            "name": "commentid",
-            "in": "path",
-            "description": "Comment ID",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Removes a comment with the ID specified in the request."
       },
       "put": {
         "tags": [
           "community/Blogs"
         ],
         "summary": "Update a blog comment",
-        "description": "Updates a blog comment specified in the request changing its content.",
-        "parameters": [
-          {
-            "name": "commentid",
-            "in": "path",
-            "description": "Comment ID",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Updates a blog comment specified in the request changing its content."
       }
     },
     "/api/2.0/community/blog/comment": {
@@ -817,17 +455,7 @@
           "community/Bookmarks"
         ],
         "summary": "Search bookmarks",
-        "description": "Returns a list of bookmarks matching the search query specified in the request with the bookmark titles, dates of creation and update, bookmark descriptions, and authors.",
-        "parameters": [
-          {
-            "name": "query",
-            "in": "path",
-            "description": "Search query",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Returns a list of bookmarks matching the search query specified in the request with the bookmark titles, dates of creation and update, bookmark descriptions, and authors."
       }
     },
     "/api/2.0/community/bookmark/@favs": {
@@ -908,34 +536,14 @@
           "community/Bookmarks"
         ],
         "summary": "Get bookmark comments",
-        "description": "Returns a list of all the comments on the bookmark with the ID specified in the request.",
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "Bookmark ID",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Returns a list of all the comments on the bookmark with the ID specified in the request."
       },
       "post": {
         "tags": [
           "community/Bookmarks"
         ],
         "summary": "Add a bookmark comment by bookmark ID",
-        "description": "Adds a comment to the bookmark with the ID specified in the request. The parent bookmark ID can be also specified if needed.\n\n**Note**: Send parentId=00000000-0000-0000-0000-000000000000 or doesn't send it at all if you want your comment to be on the root level.",
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "Bookmark ID",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Adds a comment to the bookmark with the ID specified in the request. The parent bookmark ID can be also specified if needed.\n\n**Note**: Send parentId=00000000-0000-0000-0000-000000000000 or doesn't send it at all if you want your comment to be on the root level."
       }
     },
     "/api/2.0/community/bookmark/{id}": {
@@ -944,34 +552,14 @@
           "community/Bookmarks"
         ],
         "summary": "Get a bookmark",
-        "description": "Returns the detailed information on the bookmark with the ID specified in the request.",
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "Bookmark ID",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Returns the detailed information on the bookmark with the ID specified in the request."
       },
       "delete": {
         "tags": [
           "community/Bookmarks"
         ],
         "summary": "Remove a bookmark",
-        "description": "Removes a bookmark with the ID specified in the request.",
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "Bookmark ID",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Removes a bookmark with the ID specified in the request."
       }
     },
     "/api/2.0/community/bookmark/comment/preview": {
@@ -989,34 +577,14 @@
           "community/Bookmarks"
         ],
         "summary": "Remove a comment",
-        "description": "Removes a comment with the ID specified in the request.",
-        "parameters": [
-          {
-            "name": "commentid",
-            "in": "path",
-            "description": "Comment ID",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Removes a comment with the ID specified in the request."
       },
       "put": {
         "tags": [
           "community/Bookmarks"
         ],
         "summary": "Update a bookmark comment",
-        "description": "Updates the selected bookmark comment with the content specified in the request.",
-        "parameters": [
-          {
-            "name": "commentid",
-            "in": "path",
-            "description": "Comment ID",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Updates the selected bookmark comment with the content specified in the request."
       }
     },
     "/api/2.0/community/bookmark/comment": {
@@ -1034,17 +602,7 @@
           "community/Bookmarks"
         ],
         "summary": "Remove a bookmark from favorites",
-        "description": "Removes a bookmark from favorites. If after removing the user bookmark, its rating is 0, then the bookmark will be removed completely.",
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "Bookmark ID",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Removes a bookmark from favorites. If after removing the user bookmark, its rating is 0, then the bookmark will be removed completely."
       }
     },
     "/api/2.0/community/event": {
@@ -1069,51 +627,21 @@
           "community/Events"
         ],
         "summary": "Update an event",
-        "description": "Updates the selected event changing the event title, content or/and event type specified in the request.",
-        "parameters": [
-          {
-            "name": "feedid",
-            "in": "path",
-            "description": "Feed ID",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Updates the selected event changing the event title, content or/and event type specified in the request."
       },
       "delete": {
         "tags": [
           "community/Events"
         ],
         "summary": "Delete an event",
-        "description": "Deletes an event with the ID specified in the request.",
-        "parameters": [
-          {
-            "name": "feedid",
-            "in": "path",
-            "description": "Feed ID",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Deletes an event with the ID specified in the request."
       },
       "get": {
         "tags": [
           "community/Events"
         ],
         "summary": "Get an event",
-        "description": "Returns the detailed information on the event with the ID specified in the request.",
-        "parameters": [
-          {
-            "name": "feedid",
-            "in": "path",
-            "description": "Event ID",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Returns the detailed information on the event with the ID specified in the request."
       }
     },
     "/api/2.0/community/event/@self": {
@@ -1131,17 +659,7 @@
           "community/Events"
         ],
         "summary": "Search events",
-        "description": "Returns a list of events matching the search query specified in the request with the event titles, dates of creation and update, event types, and authors.",
-        "parameters": [
-          {
-            "name": "query",
-            "in": "path",
-            "description": "Search query",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Returns a list of events matching the search query specified in the request with the event titles, dates of creation and update, event types, and authors."
       }
     },
     "/api/2.0/community/event/{feedid}/comment": {
@@ -1150,34 +668,14 @@
           "community/Events"
         ],
         "summary": "Get event comments",
-        "description": "Returns a list of all the comments on the event with the ID specified in the request.",
-        "parameters": [
-          {
-            "name": "feedid",
-            "in": "path",
-            "description": "Event ID",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Returns a list of all the comments on the event with the ID specified in the request."
       },
       "post": {
         "tags": [
           "community/Events"
         ],
         "summary": "Add an event comment by feed ID",
-        "description": "Adds a comment to the event with the ID specified in the request. The parent event ID can be also specified if needed.\n\n**Note**: Send parentId=0 or doesn't send it at all if you want your comment to be on the root level.",
-        "parameters": [
-          {
-            "name": "feedid",
-            "in": "path",
-            "description": "Feed ID",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Adds a comment to the event with the ID specified in the request. The parent event ID can be also specified if needed.\n\n**Note**: Send parentId=0 or doesn't send it at all if you want your comment to be on the root level."
       }
     },
     "/api/2.0/community/event/{feedid}/subscribe": {
@@ -1186,17 +684,7 @@
           "community/Events"
         ],
         "summary": "Comment subscription",
-        "description": "Subscribes to or unsubscribes from the comments of the event with the ID specified in the request.",
-        "parameters": [
-          {
-            "name": "feedid",
-            "in": "path",
-            "description": "Feed ID",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Subscribes to or unsubscribes from the comments of the event with the ID specified in the request."
       }
     },
     "/api/2.0/community/event/comment/preview": {
@@ -1214,34 +702,14 @@
           "community/Events"
         ],
         "summary": "Remove a comment",
-        "description": "Removes a comment with the ID specified in the request.",
-        "parameters": [
-          {
-            "name": "commentid",
-            "in": "path",
-            "description": "Comment ID",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Removes a comment with the ID specified in the request."
       },
       "put": {
         "tags": [
           "community/Events"
         ],
         "summary": "Update a comment",
-        "description": "Updates the selected event comment with the content specified in the request.",
-        "parameters": [
-          {
-            "name": "commentid",
-            "in": "path",
-            "description": "Comment ID",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Updates the selected event comment with the content specified in the request."
       }
     },
     "/api/2.0/community/event/comment": {
@@ -1275,34 +743,14 @@
           "community/Forums"
         ],
         "summary": "Get thread topics",
-        "description": "Returns a list of all the thread topics with the topic titles, dates of creation and update, post texts, and authors.",
-        "parameters": [
-          {
-            "name": "threadid",
-            "in": "path",
-            "description": "Thread ID",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Returns a list of all the thread topics with the topic titles, dates of creation and update, post texts, and authors."
       },
       "post": {
         "tags": [
           "community/Forums"
         ],
         "summary": "Add a topic to a thread",
-        "description": "Adds a new topic to the existing thread with a subject, content and topic type specified in the request.",
-        "parameters": [
-          {
-            "name": "threadid",
-            "in": "path",
-            "description": "Thread ID",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Adds a new topic to the existing thread with a subject, content and topic type specified in the request."
       }
     },
     "/api/2.0/community/forum/topic/recent": {
@@ -1320,68 +768,28 @@
           "community/Forums"
         ],
         "summary": "Get topic posts",
-        "description": "Returns a list of all the posts of the selected forum topic with the dates of creation and update, post texts, and authors.",
-        "parameters": [
-          {
-            "name": "topicid",
-            "in": "path",
-            "description": "Topic ID",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Returns a list of all the posts of the selected forum topic with the dates of creation and update, post texts, and authors."
       },
       "put": {
         "tags": [
           "community/Forums"
         ],
         "summary": "Update a topic",
-        "description": "Updates a topic with the ID specified in the request, changing a topic subject, making it sticky, or closing it.",
-        "parameters": [
-          {
-            "name": "topicid",
-            "in": "path",
-            "description": "Topic ID",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Updates a topic with the ID specified in the request, changing a topic subject, making it sticky, or closing it."
       },
       "post": {
         "tags": [
           "community/Forums"
         ],
         "summary": "Add a post to a topic",
-        "description": "Adds a post to the selected topic with a post subject and content specified in the request.",
-        "parameters": [
-          {
-            "name": "topicid",
-            "in": "path",
-            "description": "Topic ID",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Adds a post to the selected topic with a post subject and content specified in the request."
       },
       "delete": {
         "tags": [
           "community/Forums"
         ],
         "summary": "Delete a topic",
-        "description": "Deletes a topic with the ID specified in the request.",
-        "parameters": [
-          {
-            "name": "topicid",
-            "in": "path",
-            "description": "Topic ID",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Deletes a topic with the ID specified in the request."
       }
     },
     "/api/2.0/community/forum/topic/{topicid}/{postid}": {
@@ -1390,25 +798,7 @@
           "community/Forums"
         ],
         "summary": "Update a topic post",
-        "description": "Updates a post in the selected topic changing the post subject or/and content specified in the request.",
-        "parameters": [
-          {
-            "name": "topicid",
-            "in": "path",
-            "description": "Topic ID",
-            "schema": {
-              "type": "object"
-            }
-          },
-          {
-            "name": "postid",
-            "in": "path",
-            "description": "Post ID",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Updates a post in the selected topic changing the post subject or/and content specified in the request."
       }
     },
     "/api/2.0/community/forum/@search/{query}": {
@@ -1417,17 +807,7 @@
           "community/Forums"
         ],
         "summary": "Search topics",
-        "description": "Returns a list of topics matching the search query specified in the request with the topic titles, dates of creation and update, post texts, and authors.",
-        "parameters": [
-          {
-            "name": "query",
-            "in": "path",
-            "description": "Search query",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Returns a list of topics matching the search query specified in the request with the topic titles, dates of creation and update, post texts, and authors."
       }
     },
     "/api/2.0/community/forum/post/{postid}": {
@@ -1436,17 +816,7 @@
           "community/Forums"
         ],
         "summary": "Delete a post",
-        "description": "Deletes a post with the ID specified in the request.",
-        "parameters": [
-          {
-            "name": "postid",
-            "in": "path",
-            "description": "Post ID",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Deletes a post with the ID specified in the request."
       }
     },
     "/api/2.0/community/forum/thread/{threadid}": {
@@ -1455,17 +825,7 @@
           "community/Forums"
         ],
         "summary": "Delete a thread",
-        "description": "Deletes a thread with the ID specified in the request.",
-        "parameters": [
-          {
-            "name": "threadid",
-            "in": "path",
-            "description": "Thread ID",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Deletes a thread with the ID specified in the request."
       }
     },
     "/api/2.0/community/forum/category/{categoryid}": {
@@ -1474,17 +834,7 @@
           "community/Forums"
         ],
         "summary": "Delete a category",
-        "description": "Deletes a category with the ID specified in the request.",
-        "parameters": [
-          {
-            "name": "categoryid",
-            "in": "path",
-            "description": "Category ID",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Deletes a category with the ID specified in the request."
       }
     },
     "/api/2.0/community/wiki": {
@@ -1509,17 +859,7 @@
           "community/Wiki"
         ],
         "summary": "Get the page history",
-        "description": "Returns a list of history changes for a wiki page with the name specified in the request.",
-        "parameters": [
-          {
-            "name": "page",
-            "in": "path",
-            "description": "Page name",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Returns a list of history changes for a wiki page with the name specified in the request."
       }
     },
     "/api/2.0/community/wiki/search/byname/{name}": {
@@ -1528,17 +868,7 @@
           "community/Wiki"
         ],
         "summary": "Search pages by name",
-        "description": "Returns a list of wiki pages with the name matching the search query specified in the request.",
-        "parameters": [
-          {
-            "name": "name",
-            "in": "path",
-            "description": "Search query",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Returns a list of wiki pages with the name matching the search query specified in the request."
       }
     },
     "/api/2.0/community/wiki/search/bycontent/{content}": {
@@ -1547,17 +877,7 @@
           "community/Wiki"
         ],
         "summary": "Search pages by content",
-        "description": "Returns a list of wiki pages with the content matching the search query specified in the request.",
-        "parameters": [
-          {
-            "name": "content",
-            "in": "path",
-            "description": "Search query",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Returns a list of wiki pages with the content matching the search query specified in the request."
       }
     },
     "/api/2.0/crm/task/{taskid:[0-9]+}": {
@@ -2591,25 +1911,7 @@
           "crm/Currencies"
         ],
         "summary": "Get a currency rate by currencies",
-        "description": "Returns a currency rate by currencies.",
-        "parameters": [
-          {
-            "name": "fromCurrency",
-            "in": "path",
-            "description": "Currency to convert",
-            "schema": {
-              "type": "object"
-            }
-          },
-          {
-            "name": "toCurrency",
-            "in": "path",
-            "description": "Currency into which the original currency will be converted",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Returns a currency rate by currencies."
       }
     },
     "/api/2.0/crm/invoice/{invoiceid:[0-9]+}": {
@@ -2874,17 +2176,7 @@
           "crm/Contacts"
         ],
         "summary": "Get contact categories by information type",
-        "description": "Returns a list of all the available contact categories of the specified information type.",
-        "parameters": [
-          {
-            "name": "infoType",
-            "in": "path",
-            "description": "Contact information type",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Returns a list of all the available contact categories of the specified information type."
       }
     },
     "/api/2.0/crm/contact/data/infoType": {
@@ -2952,17 +2244,7 @@
           "crm/Contacts"
         ],
         "summary": "Get contact information by its type",
-        "description": "Returns the detailed contact information by the information type specified in the request.",
-        "parameters": [
-          {
-            "name": "infoType",
-            "in": "path",
-            "description": "Contact information type",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Returns the detailed contact information by the information type specified in the request."
       }
     },
     "/api/2.0/files/settings/favorites": {
@@ -3111,17 +2393,7 @@
           "files/Folders"
         ],
         "summary": "Get a folder by ID",
-        "description": "Returns the detailed list of files and folders located in the folder with the ID specified in the request.",
-        "parameters": [
-          {
-            "name": "folderId",
-            "in": "path",
-            "description": "Folder ID",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Returns the detailed list of files and folders located in the folder with the ID specified in the request."
       }
     },
     "/api/2.0/files/{fileId}/update": {
@@ -3130,17 +2402,7 @@
           "files/Files"
         ],
         "summary": "Update file content",
-        "description": "Updates the content of a file with the ID specified in the request.",
-        "parameters": [
-          {
-            "name": "fileId",
-            "in": "path",
-            "description": "File ID",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Updates the content of a file with the ID specified in the request."
       }
     },
     "/api/2.0/files/file/{fileId}/saveediting": {
@@ -3149,17 +2411,7 @@
           "files/Files"
         ],
         "summary": "Save file edits",
-        "description": "Saves edits to a file with the ID specified in the request.",
-        "parameters": [
-          {
-            "name": "fileId",
-            "in": "path",
-            "description": "File ID",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Saves edits to a file with the ID specified in the request."
       }
     },
     "/api/2.0/files/file/{fileId}/startedit": {
@@ -3168,17 +2420,7 @@
           "files/Files"
         ],
         "summary": "Start file editing",
-        "description": "Informs about opening a file with the ID specified in the request for editing, locking it from being deleted or moved (this method is called by the mobile editors).",
-        "parameters": [
-          {
-            "name": "fileId",
-            "in": "path",
-            "description": "File ID",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Informs about opening a file with the ID specified in the request for editing, locking it from being deleted or moved (this method is called by the mobile editors)."
       }
     },
     "/api/2.0/files/file/{fileId}/trackeditfile": {
@@ -3187,17 +2429,7 @@
           "files/Files"
         ],
         "summary": "Track file editing",
-        "description": "Tracks file changes when editing.",
-        "parameters": [
-          {
-            "name": "fileId",
-            "in": "path",
-            "description": "File ID",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Tracks file changes when editing."
       }
     },
     "/api/2.0/files/file/{fileId}/openedit": {
@@ -3206,17 +2438,7 @@
           "files/Files"
         ],
         "summary": "Open a file",
-        "description": "Returns the initialization configuration of a file to open it in the editor.",
-        "parameters": [
-          {
-            "name": "fileId",
-            "in": "path",
-            "description": "File ID",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Returns the initialization configuration of a file to open it in the editor."
       }
     },
     "/api/2.0/files/{folderId}/upload/create_session": {
@@ -3225,17 +2447,7 @@
           "files/Operations"
         ],
         "summary": "Chunked upload",
-        "description": "Creates a session to upload large files in multiple chunks to the folder with the ID specified in the request.\n\n**Note**: Each chunk can have different length but the length should be multiple of <b>512</b> and greater or equal to <b>10 mb</b>. Last chunk can have any size.\n            After the initial response to the request with the <b>200 OK</b> status, you must get the <em>location</em> field value from the response. Send all your chunks to this location.\n            Each chunk must be sent in the exact order the chunks appear in the file.\n            After receiving each chunk, the server will respond with the current information about the upload session if no errors occurred.\n            When the number of bytes uploaded is equal to the number of bytes you sent in the initial request, the server responds with the <b>201 Created</b> status and sends you information about the uploaded file.",
-        "parameters": [
-          {
-            "name": "folderId",
-            "in": "path",
-            "description": "Folder ID",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Creates a session to upload large files in multiple chunks to the folder with the ID specified in the request.\n\n**Note**: Each chunk can have different length but the length should be multiple of <b>512</b> and greater or equal to <b>10 mb</b>. Last chunk can have any size.\n            After the initial response to the request with the <b>200 OK</b> status, you must get the <em>location</em> field value from the response. Send all your chunks to this location.\n            Each chunk must be sent in the exact order the chunks appear in the file.\n            After receiving each chunk, the server will respond with the current information about the upload session if no errors occurred.\n            When the number of bytes uploaded is equal to the number of bytes you sent in the initial request, the server responds with the <b>201 Created</b> status and sends you information about the uploaded file."
       }
     },
     "/api/2.0/files/folder/{folderId}": {
@@ -3244,68 +2456,28 @@
           "files/Folders"
         ],
         "summary": "Create a folder",
-        "description": "Creates a new folder with the title specified in the request. The parent folder ID can be also specified.",
-        "parameters": [
-          {
-            "name": "folderId",
-            "in": "path",
-            "description": "Parent folder ID",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Creates a new folder with the title specified in the request. The parent folder ID can be also specified."
       },
       "put": {
         "tags": [
           "files/Folders"
         ],
         "summary": "Rename a folder",
-        "description": "Renames the selected folder with a new title specified in the request.",
-        "parameters": [
-          {
-            "name": "folderId",
-            "in": "path",
-            "description": "Folder ID",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Renames the selected folder with a new title specified in the request."
       },
       "get": {
         "tags": [
           "files/Folders"
         ],
         "summary": "Get the folder information",
-        "description": "Returns the detailed information about a folder with the ID specified in the request.",
-        "parameters": [
-          {
-            "name": "folderId",
-            "in": "path",
-            "description": "Folder ID",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Returns the detailed information about a folder with the ID specified in the request."
       },
       "delete": {
         "tags": [
           "files/Folders"
         ],
         "summary": "Delete a folder",
-        "description": "Deletes a folder with the ID specified in the request.",
-        "parameters": [
-          {
-            "name": "folderId",
-            "in": "path",
-            "description": "Folder ID",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Deletes a folder with the ID specified in the request."
       }
     },
     "/api/2.0/files/@my/file": {
@@ -3323,17 +2495,7 @@
           "files/Files"
         ],
         "summary": "Create a file",
-        "description": "Creates a new file in the specified folder with the title specified in the request.\n\n**Note**: If a file extension is different from DOCX/XLSX/PPTX and refers to one of the known text, spreadsheet or presentation formats, it will be changed to DOCX/XLSX/PPTX accordingly. If the file extension is not specified or is unknown, the DOCX extension will be added to the file title.",
-        "parameters": [
-          {
-            "name": "folderId",
-            "in": "path",
-            "description": "Folder ID",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Creates a new file in the specified folder with the title specified in the request.\n\n**Note**: If a file extension is different from DOCX/XLSX/PPTX and refers to one of the known text, spreadsheet or presentation formats, it will be changed to DOCX/XLSX/PPTX accordingly. If the file extension is not specified or is unknown, the DOCX extension will be added to the file title."
       }
     },
     "/api/2.0/files/folder/{folderId}/path": {
@@ -3342,17 +2504,7 @@
           "files/Folders"
         ],
         "summary": "Get the folder path",
-        "description": "Returns a path to the folder with the ID specified in the request.",
-        "parameters": [
-          {
-            "name": "folderId",
-            "in": "path",
-            "description": "Folder ID",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Returns a path to the folder with the ID specified in the request."
       }
     },
     "/api/2.0/files/file/{fileId}": {
@@ -3361,51 +2513,21 @@
           "files/Files"
         ],
         "summary": "Get the file information",
-        "description": "Returns the detailed information about a file with the ID specified in the request.",
-        "parameters": [
-          {
-            "name": "fileId",
-            "in": "path",
-            "description": "File ID",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Returns the detailed information about a file with the ID specified in the request."
       },
       "put": {
         "tags": [
           "files/Files"
         ],
         "summary": "Update a file",
-        "description": "Updates the information of the selected file with the parameters specified in the request.",
-        "parameters": [
-          {
-            "name": "fileId",
-            "in": "path",
-            "description": "File ID",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Updates the information of the selected file with the parameters specified in the request."
       },
       "delete": {
         "tags": [
           "files/Files"
         ],
         "summary": "Delete a file",
-        "description": "Deletes a file with the ID specified in the request.",
-        "parameters": [
-          {
-            "name": "fileId",
-            "in": "path",
-            "description": "File ID",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Deletes a file with the ID specified in the request."
       }
     },
     "/api/2.0/files/file/{fileId}/copyas": {
@@ -3414,17 +2536,7 @@
           "files/Files"
         ],
         "summary": "Copy a file",
-        "description": "Copies (and converts if possible) an existing file to the specified folder.",
-        "parameters": [
-          {
-            "name": "fileId",
-            "in": "path",
-            "description": "File ID",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Copies (and converts if possible) an existing file to the specified folder."
       }
     },
     "/api/2.0/files/file/{fileId}/checkconversion": {
@@ -3433,34 +2545,14 @@
           "files/Operations"
         ],
         "summary": "Start file conversion",
-        "description": "Starts a conversion operation of a file with the ID specified in the request.",
-        "parameters": [
-          {
-            "name": "fileId",
-            "in": "path",
-            "description": "File ID",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Starts a conversion operation of a file with the ID specified in the request."
       },
       "get": {
         "tags": [
           "files/Operations"
         ],
         "summary": "Get conversion status",
-        "description": "Checks the conversion status of a file with the ID specified in the request.",
-        "parameters": [
-          {
-            "name": "fileId",
-            "in": "path",
-            "description": "File ID",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Checks the conversion status of a file with the ID specified in the request."
       }
     },
     "/api/2.0/files/file/{fileId}/presigneduri": {
@@ -3469,17 +2561,7 @@
           "files/Files"
         ],
         "summary": "Get file download link",
-        "description": "Returns a link to download a file with the ID specified in the request.",
-        "parameters": [
-          {
-            "name": "fileId",
-            "in": "path",
-            "description": "File ID",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Returns a link to download a file with the ID specified in the request."
       }
     },
     "/api/2.0/files/fileops/terminate": {
@@ -3515,34 +2597,14 @@
           "files/Files"
         ],
         "summary": "Get file versions",
-        "description": "Returns the detailed information about all the available file versions with the ID specified in the request.",
-        "parameters": [
-          {
-            "name": "fileId",
-            "in": "path",
-            "description": "File ID",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Returns the detailed information about all the available file versions with the ID specified in the request."
       },
       "put": {
         "tags": [
           "files/Files"
         ],
         "summary": "Change version history",
-        "description": "Changes version history of a file with the ID specified in the request.",
-        "parameters": [
-          {
-            "name": "fileId",
-            "in": "path",
-            "description": "File ID",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Changes version history of a file with the ID specified in the request."
       }
     },
     "/api/2.0/files/file/{fileId}/share": {
@@ -3551,17 +2613,7 @@
           "files/Sharing"
         ],
         "summary": "Get the shared file information",
-        "description": "Returns the detailed information about the shared file with the ID specified in the request.",
-        "parameters": [
-          {
-            "name": "fileId",
-            "in": "path",
-            "description": "File ID",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Returns the detailed information about the shared file with the ID specified in the request."
       }
     },
     "/api/2.0/files/folder/{folderId}/share": {
@@ -3570,17 +2622,7 @@
           "files/Sharing"
         ],
         "summary": "Get the shared folder information",
-        "description": "Returns the detailed information about the shared folder with the ID specified in the request.",
-        "parameters": [
-          {
-            "name": "folderId",
-            "in": "path",
-            "description": "Folder ID",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Returns the detailed information about the shared folder with the ID specified in the request."
       }
     },
     "/api/2.0/files/{fileId}/sharedlink": {
@@ -3589,17 +2631,7 @@
           "files/Sharing"
         ],
         "summary": "Get the shared link",
-        "description": "Returns an external link to the shared file with the ID specified in the request.",
-        "parameters": [
-          {
-            "name": "fileId",
-            "in": "path",
-            "description": "File ID",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Returns an external link to the shared file with the ID specified in the request."
       }
     },
     "/api/2.0/files/sharedlink/password": {
@@ -3617,25 +2649,7 @@
           "files/Sharing"
         ],
         "summary": "Get a token for a password-protected external link",
-        "description": "Returns a token after verifying the password or password hash for a password-protected external link.\n\n**Note**: The token is used in the cookies with the 'sharelink[linkId]' name when calling API methods.",
-        "parameters": [
-          {
-            "name": "fileId",
-            "in": "path",
-            "description": "File ID",
-            "schema": {
-              "type": "object"
-            }
-          },
-          {
-            "name": "linkId",
-            "in": "path",
-            "description": "Link ID",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Returns a token after verifying the password or password hash for a password-protected external link.\n\n**Note**: The token is used in the cookies with the 'sharelink[linkId]' name when calling API methods."
       }
     },
     "/api/2.0/files/{fileId}/sharedlink/template": {
@@ -3644,17 +2658,7 @@
           "files/Sharing"
         ],
         "summary": "Get the shared link template",
-        "description": "Returns a new unsaved link object to the file with the ID specified in the request.",
-        "parameters": [
-          {
-            "name": "fileId",
-            "in": "path",
-            "description": "File ID",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Returns a new unsaved link object to the file with the ID specified in the request."
       }
     },
     "/api/2.0/files/{fileId}/properties": {
@@ -3663,34 +2667,14 @@
           "files/Files"
         ],
         "summary": "Get file properties",
-        "description": "Returns file properties of the specified file.",
-        "parameters": [
-          {
-            "name": "fileId",
-            "in": "path",
-            "description": "File ID",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Returns file properties of the specified file."
       },
       "put": {
         "tags": [
           "files/Files"
         ],
         "summary": "Save file properties to a file",
-        "description": "Saves file properties to the specified file.",
-        "parameters": [
-          {
-            "name": "fileId",
-            "in": "path",
-            "description": "File ID",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Saves file properties to the specified file."
       }
     },
     "/api/2.0/files/thirdparty/capabilities": {
@@ -3742,17 +2726,7 @@
           "files/Operations"
         ],
         "summary": "Search for files and folders",
-        "description": "Searches for files and folders by the query specified in the request.",
-        "parameters": [
-          {
-            "name": "query",
-            "in": "path",
-            "description": "Query string",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Searches for files and folders by the query specified in the request."
       }
     },
     "/api/2.0/files/storeoriginal": {
@@ -3797,17 +2771,7 @@
           "people/User status"
         ],
         "summary": "Get profiles by status",
-        "description": "Returns a list of profiles filtered by user status.",
-        "parameters": [
-          {
-            "name": "status",
-            "in": "path",
-            "description": "User status (\"Active\", \"Terminated\", \"LeaveOfAbsence\", \"All\", or \"Default\")",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Returns a list of profiles filtered by user status."
       }
     },
     "/api/2.0/people/{username}": {
@@ -3816,17 +2780,7 @@
           "people/Profiles"
         ],
         "summary": "Get a profile by user name",
-        "description": "Returns the detailed information about a profile of the user with the name specified in the request.",
-        "parameters": [
-          {
-            "name": "username",
-            "in": "path",
-            "description": "User name",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Returns the detailed information about a profile of the user with the name specified in the request."
       }
     },
     "/api/2.0/people/email": {
@@ -3844,17 +2798,7 @@
           "people/Search"
         ],
         "summary": "Search user profiles",
-        "description": "Returns a list of profiles for all the portal users matching the search query.",
-        "parameters": [
-          {
-            "name": "query",
-            "in": "path",
-            "description": "Query",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Returns a list of profiles for all the portal users matching the search query."
       }
     },
     "/api/2.0/people/search": {
@@ -3872,17 +2816,7 @@
           "people/Search"
         ],
         "summary": "Search users by status filter",
-        "description": "Returns a list of users matching the status filter and search query.",
-        "parameters": [
-          {
-            "name": "status",
-            "in": "path",
-            "description": "User status (\"Active\", \"Terminated\", \"LeaveOfAbsence\", \"All\", or \"Default\")",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Returns a list of users matching the status filter and search query."
       }
     },
     "/api/2.0/people/import/save": {
@@ -3909,17 +2843,7 @@
           "people/Profiles"
         ],
         "summary": "Delete a user",
-        "description": "Deletes a user with the ID specified in the request from the portal.",
-        "parameters": [
-          {
-            "name": "userid",
-            "in": "path",
-            "description": "User ID",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Deletes a user with the ID specified in the request from the portal."
       }
     },
     "/api/2.0/people/{userid}/photo": {
@@ -3928,51 +2852,21 @@
           "people/Photos"
         ],
         "summary": "Get a user photo",
-        "description": "Returns a photo of the user with the ID specified in the request.",
-        "parameters": [
-          {
-            "name": "userid",
-            "in": "path",
-            "description": "User ID",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Returns a photo of the user with the ID specified in the request."
       },
       "put": {
         "tags": [
           "people/Photos"
         ],
         "summary": "Update a user photo",
-        "description": "Updates a photo of the user with the ID specified in the request.",
-        "parameters": [
-          {
-            "name": "userid",
-            "in": "path",
-            "description": "User ID",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Updates a photo of the user with the ID specified in the request."
       },
       "delete": {
         "tags": [
           "people/Photos"
         ],
         "summary": "Delete a user photo",
-        "description": "Deletes a photo of the user with the ID specified in the request.",
-        "parameters": [
-          {
-            "name": "userid",
-            "in": "path",
-            "description": "User ID",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Deletes a photo of the user with the ID specified in the request."
       }
     },
     "/api/2.0/people/{userid}/photo/thumbnails": {
@@ -3981,17 +2875,7 @@
           "people/Photos"
         ],
         "summary": "Create a photo thumbnail",
-        "description": "Creates a photo thumbnail by coordinates of the original image specified in the request.",
-        "parameters": [
-          {
-            "name": "userid",
-            "in": "path",
-            "description": "User ID",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Creates a photo thumbnail by coordinates of the original image specified in the request."
       }
     },
     "/api/2.0/people/{userid}/email": {
@@ -4000,17 +2884,7 @@
           "people/Email"
         ],
         "summary": "Change a user email",
-        "description": "Sets a new email to the user with the ID specified in the request.",
-        "parameters": [
-          {
-            "name": "userid",
-            "in": "path",
-            "description": "User ID",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Sets a new email to the user with the ID specified in the request."
       }
     },
     "/api/2.0/people/{userid}/password": {
@@ -4019,17 +2893,7 @@
           "people/Password"
         ],
         "summary": "Change a user password",
-        "description": "Sets a new password to the user with the ID specified in the request.",
-        "parameters": [
-          {
-            "name": "userid",
-            "in": "path",
-            "description": "User ID",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Sets a new password to the user with the ID specified in the request."
       }
     },
     "/api/2.0/people/self/delete": {
@@ -4146,17 +3010,7 @@
           "mail/Folders"
         ],
         "summary": "Delete a folder",
-        "description": "Deletes a user folder with the ID specified in the request.",
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "Folder ID",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Deletes a user folder with the ID specified in the request."
       }
     },
     "/api/2.0/mail/userfolders/bymail": {
@@ -4244,17 +3098,7 @@
           "mail/Tags"
         ],
         "summary": "Delete a tag",
-        "description": "Deletes a tag with the ID specified in the request.",
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "Tag ID",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Deletes a tag with the ID specified in the request."
       }
     },
     "/api/2.0/mail/filters": {
@@ -4286,17 +3130,7 @@
           "mail/Filters"
         ],
         "summary": "Delete a filter",
-        "description": "Deletes a filter with the ID specified in the request.",
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "Filter ID",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Deletes a filter with the ID specified in the request."
       }
     },
     "/api/2.0/mail/filters/{id}/apply": {
@@ -4305,17 +3139,7 @@
           "mail/Filters"
         ],
         "summary": "Apply a filter",
-        "description": "Applies a filter to the existing messages.",
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "Filter ID",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Applies a filter to the existing messages."
       }
     },
     "/api/2.0/mail/settings": {
@@ -4449,17 +3273,7 @@
           "mail/Attachments"
         ],
         "summary": "Download attachments",
-        "description": "Downloads all the attachments from the message with the ID specified in the request.",
-        "parameters": [
-          {
-            "name": "messageId",
-            "in": "path",
-            "description": "Message ID",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Downloads all the attachments from the message with the ID specified in the request."
       }
     },
     "/api/2.0/mail/autoreply/update/{mailboxId:[0-9]+}": {
@@ -4486,17 +3300,7 @@
           "mail/Operations"
         ],
         "summary": "Get a mail operation status",
-        "description": "Returns a status of the mail operation with the ID specified in the request.",
-        "parameters": [
-          {
-            "name": "operationId",
-            "in": "path",
-            "description": "Operation ID",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Returns a status of the mail operation with the ID specified in the request."
       }
     },
     "/api/2.0/mail/helpcenter": {
@@ -4650,17 +3454,7 @@
           "mail/Alerts"
         ],
         "summary": "Delete an alert",
-        "description": "Deletes an alert with the ID specified in the request.",
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "Alert ID",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Deletes an alert with the ID specified in the request."
       }
     },
     "/api/2.0/mail/emails/search": {
@@ -4714,17 +3508,7 @@
           "mailserver/Mailboxes"
         ],
         "summary": "Remove a mailbox",
-        "description": "Deletes a mailbox with the ID specified in the request.",
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "Mailbox ID",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Deletes a mailbox with the ID specified in the request."
       }
     },
     "/api/2.0/mailserver/mailboxes/update": {
@@ -4814,17 +3598,7 @@
           "mailserver/Mail groups"
         ],
         "summary": "Remove a mail group",
-        "description": "Deletes a mail group with the ID specified in the request.",
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "Mail group ID",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Deletes a mail group with the ID specified in the request."
       }
     },
     "/api/2.0/mailserver/notification/address/add": {
@@ -4905,17 +3679,7 @@
           "mailserver/Domains"
         ],
         "summary": "Remove a domain from the mail server",
-        "description": "Deletes a web domain with the ID specified in the request from the mail server.",
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "Web domain ID",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Deletes a web domain with the ID specified in the request from the mail server."
       }
     },
     "/api/2.0/mailserver/domains/dns/get": {
@@ -4951,17 +3715,7 @@
           "portal/Users"
         ],
         "summary": "Get a user by ID",
-        "description": "Returns a user with the ID specified in the request from the current portal.",
-        "parameters": [
-          {
-            "name": "userID",
-            "in": "path",
-            "description": "User ID",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Returns a user with the ID specified in the request from the current portal."
       }
     },
     "/api/2.0/portal/users/invite/{employeeType}": {
@@ -4970,17 +3724,7 @@
           "portal/Users"
         ],
         "summary": "Get an invitation link",
-        "description": "Returns an invitation link for joining the portal.",
-        "parameters": [
-          {
-            "name": "employeeType",
-            "in": "path",
-            "description": "Employee type (User or Visitor)",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Returns an invitation link for joining the portal."
       }
     },
     "/api/2.0/portal/usedspace": {
@@ -5070,17 +3814,7 @@
           "portal/Backup"
         ],
         "summary": "Delete the backup",
-        "description": "Deletes the backup with the ID specified in the request.",
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "Backup ID",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Deletes the backup with the ID specified in the request."
       }
     },
     "/api/2.0/portal/deletebackuphistory": {
@@ -5375,51 +4109,21 @@
           "project/Comments"
         ],
         "summary": "Get a comment",
-        "description": "Returns the information about a comment with the ID specified in the request.",
-        "parameters": [
-          {
-            "name": "commentid",
-            "in": "path",
-            "description": "Comment ID",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Returns the information about a comment with the ID specified in the request."
       },
       "delete": {
         "tags": [
           "project/Comments"
         ],
         "summary": "Remove a comment",
-        "description": "Removes a comment with the ID specified in the request.",
-        "parameters": [
-          {
-            "name": "commentid",
-            "in": "path",
-            "description": "Comment ID",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Removes a comment with the ID specified in the request."
       },
       "put": {
         "tags": [
           "project/Comments"
         ],
         "summary": "Update a comment",
-        "description": "Updates the seleted comment using the comment text specified in the request.",
-        "parameters": [
-          {
-            "name": "commentid",
-            "in": "path",
-            "description": "Comment ID",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Updates the seleted comment using the comment text specified in the request."
       }
     },
     "/api/2.0/project/comment/preview": {
@@ -5462,17 +4166,7 @@
           "project/Tags"
         ],
         "summary": "Get projects by a tag",
-        "description": "Returns the detailed list of all the projects with a tag specified in the request.",
-        "parameters": [
-          {
-            "name": "tag",
-            "in": "path",
-            "description": "Tag name",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Returns the detailed list of all the projects with a tag specified in the request."
       }
     },
     "/api/2.0/project/tag/search": {
@@ -5517,33 +4211,7 @@
           "project/Milestones"
         ],
         "summary": "Get milestones by deadline",
-        "description": "Returns a list of all the milestones with the deadline specified in the request.",
-        "parameters": [
-          {
-            "name": "year",
-            "in": "path",
-            "description": "Deadline year",
-            "schema": {
-              "type": "object"
-            }
-          },
-          {
-            "name": "month",
-            "in": "path",
-            "description": "Deadline month",
-            "schema": {
-              "type": "object"
-            }
-          },
-          {
-            "name": "day",
-            "in": "path",
-            "description": "Deadline day",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Returns a list of all the milestones with the deadline specified in the request."
       }
     },
     "/api/2.0/project/milestone/{year}/{month}": {
@@ -5552,25 +4220,7 @@
           "project/Milestones"
         ],
         "summary": "Get milestones by deadline month",
-        "description": "Returns a list of all the milestones with the deadline month specified in the request.",
-        "parameters": [
-          {
-            "name": "year",
-            "in": "path",
-            "description": "Deadline year",
-            "schema": {
-              "type": "object"
-            }
-          },
-          {
-            "name": "month",
-            "in": "path",
-            "description": "Deadline month",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Returns a list of all the milestones with the deadline month specified in the request."
       }
     },
     "/api/2.0/project/milestone/{id:[0-9]+}": {
@@ -5670,17 +4320,7 @@
           "project/Tasks"
         ],
         "summary": "Delete a task status",
-        "description": "Deletes a task status with the ID specified in the request.",
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "Task status ID",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Deletes a task status with the ID specified in the request."
       }
     },
     "/api/2.0/project/{projectid:[0-9]+}/message": {
@@ -5902,17 +4542,7 @@
           "project/Projects"
         ],
         "summary": "Search in a project",
-        "description": "Returns the search results for a project containing the words/phrases matching the query specified in the request.",
-        "parameters": [
-          {
-            "name": "query",
-            "in": "path",
-            "description": "Search query",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Returns the search results for a project containing the words/phrases matching the query specified in the request."
       }
     },
     "/api/2.0/project/@search/{query}": {
@@ -5921,17 +4551,7 @@
           "project/Projects"
         ],
         "summary": "Search projects",
-        "description": "Returns a list of all the projects matching the query specified in the request.",
-        "parameters": [
-          {
-            "name": "query",
-            "in": "path",
-            "description": "Search query",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Returns a list of all the projects matching the query specified in the request."
       }
     },
     "/api/2.0/project/{id:[0-9]+}/status": {
@@ -6202,17 +4822,7 @@
           "security/Active connections"
         ],
         "summary": "Log out for the user by ID",
-        "description": "Logs out from all the active connections for the user with the ID specified in the request.",
-        "parameters": [
-          {
-            "name": "userId",
-            "in": "path",
-            "description": "User ID",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Logs out from all the active connections for the user with the ID specified in the request."
       }
     },
     "/api/2.0/security//activeconnections/logoutallexceptthis": {
@@ -6230,17 +4840,7 @@
           "security/Active connections"
         ],
         "summary": "Log out from the connection",
-        "description": "Logs out from the connection with the ID specified in the request.",
-        "parameters": [
-          {
-            "name": "loginEventId",
-            "in": "path",
-            "description": "Login event ID",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Logs out from the connection with the ID specified in the request."
       }
     },
     "/api/2.0/security//loginsettings": {
@@ -6267,34 +4867,14 @@
           "security/Impersonation"
         ],
         "summary": "Check user impersonation",
-        "description": "Checks if a user with the ID specified in the request can be impersonated or not.",
-        "parameters": [
-          {
-            "name": "userId",
-            "in": "path",
-            "description": "User ID",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Checks if a user with the ID specified in the request can be impersonated or not."
       },
       "post": {
         "tags": [
           "security/Impersonation"
         ],
         "summary": "Impersonate a user",
-        "description": "Impersonates a user with the ID specified in the request.",
-        "parameters": [
-          {
-            "name": "userId",
-            "in": "path",
-            "description": "User ID",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Impersonates a user with the ID specified in the request."
       }
     },
     "/api/2.0/security//impersonate/logout": {
@@ -6438,17 +5018,7 @@
           "settings/Custom navigation"
         ],
         "summary": "Get a custom navigation item by ID",
-        "description": "Returns a custom navigation item by the ID specified in the request.",
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "Item ID",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Returns a custom navigation item by the ID specified in the request."
       }
     },
     "/api/2.0/settings/customnavigation/create": {
@@ -6466,17 +5036,7 @@
           "settings/Custom navigation"
         ],
         "summary": "Delete a custom navigation item",
-        "description": "Deletes a custom navigation item with the ID specified in the request.",
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "Item ID",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Deletes a custom navigation item with the ID specified in the request."
       }
     },
     "/api/2.0/settings/emailactivation": {
@@ -6494,17 +5054,7 @@
           "settings/Statistics"
         ],
         "summary": "Get the space usage statistics",
-        "description": "Returns the space usage statistics of the module with the ID specified in the request.",
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "Module ID",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Returns the space usage statistics of the module with the ID specified in the request."
       }
     },
     "/api/2.0/settings/statistics/visit": {
@@ -6812,17 +5362,7 @@
           "settings/Security"
         ],
         "summary": "Get the module availability",
-        "description": "Returns the availability of the module with the ID specified in the request.",
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "Module ID",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Returns the availability of the module with the ID specified in the request."
       }
     },
     "/api/2.0/settings/security/password": {
@@ -6847,17 +5387,7 @@
           "settings/Security"
         ],
         "summary": "Get the product administrators",
-        "description": "Returns a list of all the administrators of the product with the ID specified in the request.",
-        "parameters": [
-          {
-            "name": "productid",
-            "in": "path",
-            "description": "Product ID",
-            "schema": {
-              "type": "object"
-            }
-          }
-        ]
+        "description": "Returns a list of all the administrators of the product with the ID specified in the request."
       }
     },
     "/api/2.0/settings/security/administrator": {
