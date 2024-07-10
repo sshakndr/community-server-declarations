@@ -1,0 +1,78 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net48</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DocumentationUtility.Shared\DocumentationUtility.Shared.csproj" />
+    <ProjectReference Include="..\Portals\common\ASC.ActiveDirectory\ASC.ActiveDirectory.csproj" />
+    <ProjectReference Include="..\Portals\common\ASC.Common\ASC.Common.csproj" />
+    <ProjectReference Include="..\Portals\common\ASC.Core.Common\ASC.Core.Common.csproj" />
+    <ProjectReference Include="..\Portals\common\ASC.Data.Backup\ASC.Data.Backup.csproj" />
+    <ProjectReference Include="..\Portals\common\ASC.Data.Encryption\ASC.Data.Encryption.csproj" />
+    <ProjectReference Include="..\Portals\common\ASC.Data.Storage.Encryption\ASC.Data.Storage.Encryption.csproj" />
+    <ProjectReference Include="..\Portals\common\ASC.Data.Storage.Migration\ASC.Data.Storage.Migration.csproj" />
+    <ProjectReference Include="..\Portals\common\ASC.Data.Storage.StaticCopy\ASC.Data.Storage.StaticCopy.csproj" />
+    <ProjectReference Include="..\Portals\common\ASC.Data.Storage\ASC.Data.Storage.csproj" />
+    <ProjectReference Include="..\Portals\common\ASC.IPSecurity\ASC.IPSecurity.csproj" />
+    <ProjectReference Include="..\Portals\common\ASC.Notify.Textile\ASC.Notify.Textile.csproj" />
+    <ProjectReference Include="..\Portals\common\TMResourceManager\ASC.Resource.Data\ASC.Resource.Data.csproj" />
+    <ProjectReference Include="..\Portals\common\TMResourceManager\ASC.Resource.Upload\ASC.Resource.Upload.csproj" />
+    <ProjectReference Include="..\Portals\module\ASC.Api\ASC.Api.Calendar\ASC.Api.Calendar.csproj" />
+    <ProjectReference Include="..\Portals\module\ASC.Api\ASC.Api.Client\ASC.Api.Client.csproj" />
+    <ProjectReference Include="..\Portals\module\ASC.Api\ASC.Api.Community\ASC.Api.Community.csproj" />
+    <ProjectReference Include="..\Portals\module\ASC.Api\ASC.Api.CRM\ASC.Api.CRM.csproj" />
+    <ProjectReference Include="..\Portals\module\ASC.Api\ASC.Api.Documents\ASC.Api.Documents.csproj" />
+    <ProjectReference Include="..\Portals\module\ASC.Api\ASC.Api.Feed\ASC.Api.Feed.csproj" />
+    <ProjectReference Include="..\Portals\module\ASC.Api\ASC.Api.MailServer\ASC.Api.MailServer.csproj" />
+    <ProjectReference Include="..\Portals\module\ASC.Api\ASC.Api.Mail\ASC.Api.Mail.csproj" />
+    <ProjectReference Include="..\Portals\module\ASC.Api\ASC.Api.Migration\ASC.Api.Migration.csproj" />
+    <ProjectReference Include="..\Portals\module\ASC.Api\ASC.Api.Portal\ASC.Api.Portal.csproj" />
+    <ProjectReference Include="..\Portals\module\ASC.Api\ASC.Api.Projects\ASC.Api.Projects.csproj" />
+    <ProjectReference Include="..\Portals\module\ASC.Api\ASC.Api.Sample\ASC.Api.Sample.csproj" />
+    <ProjectReference Include="..\Portals\module\ASC.Api\ASC.Api.Security\ASC.Api.Security.csproj" />
+    <ProjectReference Include="..\Portals\module\ASC.Api\ASC.Api.Settings\ASC.Api.Settings.csproj" />
+    <ProjectReference Include="..\Portals\module\ASC.Api\ASC.Api\ASC.Api.Core.csproj" />
+    <ProjectReference Include="..\Portals\module\ASC.Api\ASC.Employee\ASC.Api.Employee.csproj" />
+    <ProjectReference Include="..\Portals\module\ASC.Api\ASC.Specific\ASC.Specific.csproj" />
+    <ProjectReference Include="..\Portals\module\ASC.AuditTrail\ASC.AuditTrail.csproj" />
+    <ProjectReference Include="..\Portals\module\ASC.Data.Reassigns\ASC.Data.Reassigns.csproj" />
+    <ProjectReference Include="..\Portals\module\ASC.ElasticSearch\ASC.ElasticSearch.csproj" />
+    <ProjectReference Include="..\Portals\module\ASC.Feed.Aggregator\ASC.Feed.Aggregator.csproj" />
+    <ProjectReference Include="..\Portals\module\ASC.Feed\ASC.Feed.csproj" />
+    <ProjectReference Include="..\Portals\module\ASC.Files.AutoCleanUp\ASC.Files.AutoCleanUp.csproj" />
+    <ProjectReference Include="..\Portals\module\ASC.Files.Thirdparty\ASC.Files.Thirdparty.csproj" />
+    <ProjectReference Include="..\Portals\module\ASC.Files.ThumbnailBuilder\ASC.Files.ThumbnailBuilder.csproj" />
+    <ProjectReference Include="..\Portals\module\ASC.Mail.Server\ASC.Mail.Server\ASC.Mail.Server.csproj" />
+    <ProjectReference Include="..\Portals\module\ASC.Mail\ASC.Mail\ASC.Mail.csproj" />
+    <ProjectReference Include="..\Portals\module\ASC.MessagingSystem\ASC.MessagingSystem.csproj" />
+    <ProjectReference Include="..\Portals\module\ASC.Migration\ASC.Migration.csproj" />
+    <ProjectReference Include="..\Portals\module\ASC.Notify\ASC.Notify\ASC.Notify.csproj" />
+    <ProjectReference Include="..\Portals\module\ASC.Radicale\ASC.Radicale.csproj" />
+    <ProjectReference Include="..\Portals\module\ASC.Recycle\ASC.Recycle.csproj" />
+    <ProjectReference Include="..\Portals\module\ASC.Socket.IO.Svc\ASC.Socket.IO.Svc.csproj" />
+    <ProjectReference Include="..\Portals\module\ASC.SsoAuth.Svc\ASC.SsoAuth.Svc.csproj" />
+    <ProjectReference Include="..\Portals\module\ASC.TeamLabSvc\ASC.TeamLabSvc\ASC.TeamLabSvc.csproj" />
+    <ProjectReference Include="..\Portals\module\ASC.TelegramService\ASC.TelegramService.csproj" />
+    <ProjectReference Include="..\Portals\module\ASC.Thrdparty\ASC.FederatedLogin\ASC.FederatedLogin.csproj" />
+    <ProjectReference Include="..\Portals\module\ASC.Thumbnails.Svc\ASC.Thumbnails.Svc.csproj" />
+    <ProjectReference Include="..\Portals\module\ASC.UrlShortener.Svc\ASC.UrlShortener.Svc.csproj" />
+    <ProjectReference Include="..\Portals\module\ASC.VoipService\ASC.VoipService.csproj" />
+    <ProjectReference Include="..\Portals\module\ASC.WebDav.Svc\ASC.WebDav.Svc.csproj" />
+    <ProjectReference Include="..\Portals\web\core\ASC.Web.Core\ASC.Web.Core.csproj" />
+    <ProjectReference Include="..\Portals\web\studio\ASC.Web.Studio\addons\calendar\ASC.Web.Calendar.csproj" />
+    <ProjectReference Include="..\Portals\web\studio\ASC.Web.Studio\addons\mail\ASC.Web.Mail.csproj" />
+    <ProjectReference Include="..\Portals\web\studio\ASC.Web.Studio\addons\talk\ASC.Web.Talk.csproj" />
+    <ProjectReference Include="..\Portals\web\studio\ASC.Web.Studio\ASC.Web.Studio.csproj" />
+    <ProjectReference Include="..\Portals\web\studio\ASC.Web.Studio\Products\Community\ASC.Web.Community.csproj" />
+    <ProjectReference Include="..\Portals\web\studio\ASC.Web.Studio\Products\CRM\ASC.Web.CRM.csproj" />
+    <ProjectReference Include="..\Portals\web\studio\ASC.Web.Studio\Products\Files\ASC.Web.Files.csproj" />
+    <ProjectReference Include="..\Portals\web\studio\ASC.Web.Studio\Products\People\ASC.Web.People.csproj" />
+    <ProjectReference Include="..\Portals\web\studio\ASC.Web.Studio\Products\Projects\ASC.Web.Projects.csproj" />
+    <ProjectReference Include="..\Portals\web\studio\ASC.Web.Studio\Products\Sample\ASC.Web.Sample.csproj" />
+    <ProjectReference Include="..\Portals\web\studio\ASC.Web.Upload\ASC.Web.Upload.csproj" />
+  </ItemGroup>
+
+</Project>

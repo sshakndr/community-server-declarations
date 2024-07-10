@@ -1,0 +1,3 @@
+[submodule "Portals"]
+	path = src/Portals
+	url = https://github.com/ONLYOFFICE/portals.git
