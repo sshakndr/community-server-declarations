@@ -155,7 +155,7 @@
             "description": "New event alert type, in case alert type is set by default",
             "schema": {
               "type": "object",
-              "properties": []
+              "properties": {}
             }
           },
           {
@@ -174,13 +174,23 @@
               "type": "array",
               "items": {
                 "type": "object",
-                "properties": [
-                  null,
-                  null,
-                  null,
-                  null,
-                  null
-                ]
+                "properties": {
+                  "actionId": {
+                    "type": "string"
+                  },
+                  "itemId": {
+                    "type": "string"
+                  },
+                  "isGroup": {
+                    "type": "string"
+                  },
+                  "Id": {
+                    "type": "string"
+                  },
+                  "IsGroup": {
+                    "type": "string"
+                  }
+                }
               }
             }
           },
@@ -266,7 +276,7 @@
             "description": "New event alert type, in case alert type is set by default",
             "schema": {
               "type": "object",
-              "properties": []
+              "properties": {}
             }
           },
           {
@@ -529,7 +539,7 @@
             "description": "Event notification type",
             "schema": {
               "type": "object",
-              "properties": []
+              "properties": {}
             }
           },
           {
@@ -548,13 +558,23 @@
               "type": "array",
               "items": {
                 "type": "object",
-                "properties": [
-                  null,
-                  null,
-                  null,
-                  null,
-                  null
-                ]
+                "properties": {
+                  "actionId": {
+                    "type": "string"
+                  },
+                  "itemId": {
+                    "type": "string"
+                  },
+                  "isGroup": {
+                    "type": "string"
+                  },
+                  "Id": {
+                    "type": "string"
+                  },
+                  "IsGroup": {
+                    "type": "string"
+                  }
+                }
               }
             }
           }
@@ -623,7 +643,7 @@
             "description": "Event notification type",
             "schema": {
               "type": "object",
-              "properties": []
+              "properties": {}
             }
           },
           {
@@ -642,13 +662,23 @@
               "type": "array",
               "items": {
                 "type": "object",
-                "properties": [
-                  null,
-                  null,
-                  null,
-                  null,
-                  null
-                ]
+                "properties": {
+                  "actionId": {
+                    "type": "string"
+                  },
+                  "itemId": {
+                    "type": "string"
+                  },
+                  "isGroup": {
+                    "type": "string"
+                  },
+                  "Id": {
+                    "type": "string"
+                  },
+                  "IsGroup": {
+                    "type": "string"
+                  }
+                }
               }
             }
           }
@@ -725,7 +755,7 @@
             "description": "New event notification type",
             "schema": {
               "type": "object",
-              "properties": []
+              "properties": {}
             }
           },
           {
@@ -744,13 +774,23 @@
               "type": "array",
               "items": {
                 "type": "object",
-                "properties": [
-                  null,
-                  null,
-                  null,
-                  null,
-                  null
-                ]
+                "properties": {
+                  "actionId": {
+                    "type": "string"
+                  },
+                  "itemId": {
+                    "type": "string"
+                  },
+                  "isGroup": {
+                    "type": "string"
+                  },
+                  "Id": {
+                    "type": "string"
+                  },
+                  "IsGroup": {
+                    "type": "string"
+                  }
+                }
               }
             }
           },
@@ -760,7 +800,7 @@
             "description": "New event status",
             "schema": {
               "type": "object",
-              "properties": []
+              "properties": {}
             }
           }
         ]
@@ -1103,7 +1143,7 @@
             "description": "Event notification type",
             "schema": {
               "type": "object",
-              "properties": []
+              "properties": {}
             }
           },
           {
@@ -1114,13 +1154,23 @@
               "type": "array",
               "items": {
                 "type": "object",
-                "properties": [
-                  null,
-                  null,
-                  null,
-                  null,
-                  null
-                ]
+                "properties": {
+                  "actionId": {
+                    "type": "string"
+                  },
+                  "itemId": {
+                    "type": "string"
+                  },
+                  "isGroup": {
+                    "type": "string"
+                  },
+                  "Id": {
+                    "type": "string"
+                  },
+                  "IsGroup": {
+                    "type": "string"
+                  }
+                }
               }
             }
           },
@@ -1171,7 +1221,7 @@
             "description": "New event notification type",
             "schema": {
               "type": "object",
-              "properties": []
+              "properties": {}
             }
           },
           {
@@ -1182,13 +1232,23 @@
               "type": "array",
               "items": {
                 "type": "object",
-                "properties": [
-                  null,
-                  null,
-                  null,
-                  null,
-                  null
-                ]
+                "properties": {
+                  "actionId": {
+                    "type": "string"
+                  },
+                  "itemId": {
+                    "type": "string"
+                  },
+                  "isGroup": {
+                    "type": "string"
+                  },
+                  "Id": {
+                    "type": "string"
+                  },
+                  "IsGroup": {
+                    "type": "string"
+                  }
+                }
               }
             }
           },
@@ -1260,7 +1320,7 @@
             "description": "The event deletion type: 0 - the single event, 1 - all the following events, 2 - all the event series.",
             "schema": {
               "type": "object",
-              "properties": []
+              "properties": {}
             }
           },
           {
@@ -2425,7 +2485,7 @@
             "description": "Event type",
             "schema": {
               "type": "object",
-              "properties": []
+              "properties": {}
             }
           }
         ]
@@ -2469,7 +2529,7 @@
             "description": "New event type",
             "schema": {
               "type": "object",
-              "properties": []
+              "properties": {}
             }
           }
         ]
@@ -2857,7 +2917,7 @@
             "description": "Topic type",
             "schema": {
               "type": "object",
-              "properties": []
+              "properties": {}
             }
           }
         ]
@@ -3847,7 +3907,7 @@
             "description": "Number type",
             "schema": {
               "type": "object",
-              "properties": []
+              "properties": {}
             }
           },
           {
@@ -4025,11 +4085,17 @@
             "description": "New phone number working hours",
             "schema": {
               "type": "object",
-              "properties": [
-                null,
-                null,
-                null
-              ]
+              "properties": {
+                "Enabled": {
+                  "type": "string"
+                },
+                "From": {
+                  "type": "string"
+                },
+                "To": {
+                  "type": "string"
+                }
+              }
             }
           },
           {
@@ -4079,13 +4145,23 @@
             "description": "Connection waiting queue",
             "schema": {
               "type": "object",
-              "properties": [
-                null,
-                null,
-                null,
-                null,
-                null
-              ]
+              "properties": {
+                "Id": {
+                  "type": "string"
+                },
+                "Name": {
+                  "type": "string"
+                },
+                "Size": {
+                  "type": "string"
+                },
+                "WaitUrl": {
+                  "type": "string"
+                },
+                "WaitTime": {
+                  "type": "string"
+                }
+              }
             }
           },
           {
@@ -4127,7 +4203,7 @@
             "description": "Audio type",
             "schema": {
               "type": "object",
-              "properties": []
+              "properties": {}
             }
           },
           {
@@ -4237,7 +4313,7 @@
               "type": "array",
               "items": {
                 "type": "object",
-                "properties": []
+                "properties": {}
               }
             }
           },
@@ -4271,7 +4347,7 @@
               "type": "array",
               "items": {
                 "type": "object",
-                "properties": []
+                "properties": {}
               }
             }
           },
@@ -4492,7 +4568,7 @@
               "type": "array",
               "items": {
                 "type": "object",
-                "properties": []
+                "properties": {}
               }
             }
           },
@@ -5881,7 +5957,7 @@
             "description": "Report type",
             "schema": {
               "type": "object",
-              "properties": []
+              "properties": {}
             }
           },
           {
@@ -5890,7 +5966,7 @@
             "description": "Report time period",
             "schema": {
               "type": "object",
-              "properties": []
+              "properties": {}
             }
           },
           {
@@ -5921,7 +5997,7 @@
             "description": "Report type",
             "schema": {
               "type": "object",
-              "properties": []
+              "properties": {}
             }
           },
           {
@@ -5930,7 +6006,7 @@
             "description": "Report time period",
             "schema": {
               "type": "object",
-              "properties": []
+              "properties": {}
             }
           },
           {
@@ -6932,7 +7008,7 @@
             "description": "Person privacy: 0 - not shared, 1 - shared for reading/writing, 2 - shared for reading only",
             "schema": {
               "type": "object",
-              "properties": []
+              "properties": {}
             }
           },
           {
@@ -7117,7 +7193,7 @@
             "description": "New person privacy: 0 - not shared, 1 - shared for reading/writing, 2 - shared for reading only",
             "schema": {
               "type": "object",
-              "properties": []
+              "properties": {}
             }
           },
           {
@@ -7197,7 +7273,7 @@
             "description": "Company privacy: 0 - not shared, 1 - shared for reading/writing, 2 - shared for reading only",
             "schema": {
               "type": "object",
-              "properties": []
+              "properties": {}
             }
           },
           {
@@ -7318,7 +7394,7 @@
             "description": "New company privacy: 0 - not shared, 1 - shared for reading/writnig, 2 - shared for reading only",
             "schema": {
               "type": "object",
-              "properties": []
+              "properties": {}
             }
           },
           {
@@ -8074,7 +8150,7 @@
             "description": "New bid type",
             "schema": {
               "type": "object",
-              "properties": []
+              "properties": {}
             }
           },
           {
@@ -8460,7 +8536,7 @@
             "description": "Bid type",
             "schema": {
               "type": "object",
-              "properties": []
+              "properties": {}
             }
           },
           {
@@ -8967,16 +9043,32 @@
               "type": "array",
               "items": {
                 "type": "object",
-                "properties": [
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  null
-                ]
+                "properties": {
+                  "FromCurrency": {
+                    "type": "string"
+                  },
+                  "ToCurrency": {
+                    "type": "string"
+                  },
+                  "Rate": {
+                    "type": "string"
+                  },
+                  "CreateBy": {
+                    "type": "string"
+                  },
+                  "CreateOn": {
+                    "type": "string"
+                  },
+                  "LastModifedBy": {
+                    "type": "string"
+                  },
+                  "LastModifedOn": {
+                    "type": "string"
+                  },
+                  "ID": {
+                    "type": "string"
+                  }
+                }
               }
             }
           }
@@ -8999,16 +9091,32 @@
               "type": "array",
               "items": {
                 "type": "object",
-                "properties": [
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  null
-                ]
+                "properties": {
+                  "FromCurrency": {
+                    "type": "string"
+                  },
+                  "ToCurrency": {
+                    "type": "string"
+                  },
+                  "Rate": {
+                    "type": "string"
+                  },
+                  "CreateBy": {
+                    "type": "string"
+                  },
+                  "CreateOn": {
+                    "type": "string"
+                  },
+                  "LastModifedBy": {
+                    "type": "string"
+                  },
+                  "LastModifedOn": {
+                    "type": "string"
+                  },
+                  "ID": {
+                    "type": "string"
+                  }
+                }
               }
             }
           }
@@ -9370,18 +9478,38 @@
               "type": "array",
               "items": {
                 "type": "object",
-                "properties": [
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  null
-                ]
+                "properties": {
+                  "InvoiceID": {
+                    "type": "string"
+                  },
+                  "InvoiceItemID": {
+                    "type": "string"
+                  },
+                  "InvoiceTax1ID": {
+                    "type": "string"
+                  },
+                  "InvoiceTax2ID": {
+                    "type": "string"
+                  },
+                  "SortOrder": {
+                    "type": "string"
+                  },
+                  "Description": {
+                    "type": "string"
+                  },
+                  "Quantity": {
+                    "type": "string"
+                  },
+                  "Price": {
+                    "type": "string"
+                  },
+                  "Discount": {
+                    "type": "string"
+                  },
+                  "ID": {
+                    "type": "string"
+                  }
+                }
               }
             }
           }
@@ -9524,18 +9652,38 @@
               "type": "array",
               "items": {
                 "type": "object",
-                "properties": [
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  null
-                ]
+                "properties": {
+                  "InvoiceID": {
+                    "type": "string"
+                  },
+                  "InvoiceItemID": {
+                    "type": "string"
+                  },
+                  "InvoiceTax1ID": {
+                    "type": "string"
+                  },
+                  "InvoiceTax2ID": {
+                    "type": "string"
+                  },
+                  "SortOrder": {
+                    "type": "string"
+                  },
+                  "Description": {
+                    "type": "string"
+                  },
+                  "Quantity": {
+                    "type": "string"
+                  },
+                  "Price": {
+                    "type": "string"
+                  },
+                  "Discount": {
+                    "type": "string"
+                  },
+                  "ID": {
+                    "type": "string"
+                  }
+                }
               }
             }
           }
@@ -10993,16 +11141,32 @@
             "description": "Address data",
             "schema": {
               "type": "object",
-              "properties": [
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null
-              ]
+              "properties": {
+                "Street": {
+                  "type": "string"
+                },
+                "City": {
+                  "type": "string"
+                },
+                "State": {
+                  "type": "string"
+                },
+                "Zip": {
+                  "type": "string"
+                },
+                "Country": {
+                  "type": "string"
+                },
+                "Category": {
+                  "type": "string"
+                },
+                "CategoryName": {
+                  "type": "string"
+                },
+                "IsPrimary": {
+                  "type": "string"
+                }
+              }
             }
           }
         ]
@@ -11038,16 +11202,32 @@
             "description": "New address data",
             "schema": {
               "type": "object",
-              "properties": [
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null
-              ]
+              "properties": {
+                "Street": {
+                  "type": "string"
+                },
+                "City": {
+                  "type": "string"
+                },
+                "State": {
+                  "type": "string"
+                },
+                "Zip": {
+                  "type": "string"
+                },
+                "Country": {
+                  "type": "string"
+                },
+                "Category": {
+                  "type": "string"
+                },
+                "CategoryName": {
+                  "type": "string"
+                },
+                "IsPrimary": {
+                  "type": "string"
+                }
+              }
             }
           }
         ]
@@ -11140,7 +11320,7 @@
             "description": "A time interval when the auto-clearing will be performed (one week, two weeks, one month, two months, three months)",
             "schema": {
               "type": "object",
-              "properties": []
+              "properties": {}
             }
           }
         ]
@@ -11169,7 +11349,7 @@
               "type": "array",
               "items": {
                 "type": "object",
-                "properties": []
+                "properties": {}
               }
             }
           }
@@ -11269,7 +11449,7 @@
             "description": "Filter type",
             "schema": {
               "type": "object",
-              "properties": []
+              "properties": {}
             }
           },
           {
@@ -11337,7 +11517,7 @@
             "description": "Filter type",
             "schema": {
               "type": "object",
-              "properties": []
+              "properties": {}
             }
           },
           {
@@ -11389,7 +11569,7 @@
             "description": "Filter type",
             "schema": {
               "type": "object",
-              "properties": []
+              "properties": {}
             }
           },
           {
@@ -11441,7 +11621,7 @@
             "description": "Filter type",
             "schema": {
               "type": "object",
-              "properties": []
+              "properties": {}
             }
           },
           {
@@ -11493,7 +11673,7 @@
             "description": "Filter type",
             "schema": {
               "type": "object",
-              "properties": []
+              "properties": {}
             }
           },
           {
@@ -11545,7 +11725,7 @@
             "description": "Filter type",
             "schema": {
               "type": "object",
-              "properties": []
+              "properties": {}
             }
           },
           {
@@ -11597,7 +11777,7 @@
             "description": "Filter type",
             "schema": {
               "type": "object",
-              "properties": []
+              "properties": {}
             }
           },
           {
@@ -11649,7 +11829,7 @@
             "description": "Filter type",
             "schema": {
               "type": "object",
-              "properties": []
+              "properties": {}
             }
           },
           {
@@ -11701,7 +11881,7 @@
             "description": "Filter type",
             "schema": {
               "type": "object",
-              "properties": []
+              "properties": {}
             }
           },
           {
@@ -11761,7 +11941,7 @@
             "description": "Filter type",
             "schema": {
               "type": "object",
-              "properties": []
+              "properties": {}
             }
           },
           {
@@ -12882,7 +13062,7 @@
             "description": "Overwriting behavior: skip (0), overwrite (1) or duplicate (2)",
             "schema": {
               "type": "object",
-              "properties": []
+              "properties": {}
             }
           },
           {
@@ -12940,7 +13120,7 @@
             "description": "Overwriting behavior: skip (0), overwrite (1) or duplicate (2)",
             "schema": {
               "type": "object",
-              "properties": []
+              "properties": {}
             }
           },
           {
@@ -13200,10 +13380,14 @@
               "type": "array",
               "items": {
                 "type": "object",
-                "properties": [
-                  null,
-                  null
-                ]
+                "properties": {
+                  "ShareTo": {
+                    "type": "string"
+                  },
+                  "Access": {
+                    "type": "string"
+                  }
+                }
               }
             }
           },
@@ -13229,10 +13413,14 @@
             "description": "Advanced settings which prohibit printing, downloading, copying the file, and changing sharing settings",
             "schema": {
               "type": "object",
-              "properties": [
-                null,
-                null
-              ]
+              "properties": {
+                "DenyDownload": {
+                  "type": "string"
+                },
+                "DenySharing": {
+                  "type": "string"
+                }
+              }
             }
           }
         ]
@@ -13279,10 +13467,14 @@
               "type": "array",
               "items": {
                 "type": "object",
-                "properties": [
-                  null,
-                  null
-                ]
+                "properties": {
+                  "ShareTo": {
+                    "type": "string"
+                  },
+                  "Access": {
+                    "type": "string"
+                  }
+                }
               }
             }
           },
@@ -13360,7 +13552,7 @@
             "description": "Sharing rights",
             "schema": {
               "type": "object",
-              "properties": []
+              "properties": {}
             }
           }
         ]
@@ -13510,9 +13702,11 @@
             "description": "File properties",
             "schema": {
               "type": "object",
-              "properties": [
-                null
-              ]
+              "properties": {
+                "FormFilling": {
+                  "type": "string"
+                }
+              }
             }
           }
         ]
@@ -13551,9 +13745,11 @@
             "description": "File properties",
             "schema": {
               "type": "object",
-              "properties": [
-                null
-              ]
+              "properties": {
+                "FormFilling": {
+                  "type": "string"
+                }
+              }
             }
           }
         ]
@@ -13883,7 +14079,7 @@
             "description": "User status (\"Active\", \"Terminated\", \"LeaveOfAbsence\", \"All\", or \"Default\")",
             "schema": {
               "type": "object",
-              "properties": []
+              "properties": {}
             }
           }
         ]
@@ -13901,7 +14097,7 @@
             "description": "New user status (\"Active\", \"Terminated\", \"LeaveOfAbsence\", \"All\", or \"Default\"",
             "schema": {
               "type": "object",
-              "properties": []
+              "properties": {}
             }
           },
           {
@@ -13998,11 +14194,17 @@
               "type": "array",
               "items": {
                 "type": "object",
-                "properties": [
-                  null,
-                  null,
-                  null
-                ]
+                "properties": {
+                  "ID": {
+                    "type": "string"
+                  },
+                  "Enabled": {
+                    "type": "string"
+                  },
+                  "Title": {
+                    "type": "string"
+                  }
+                }
               }
             }
           }
@@ -14023,7 +14225,7 @@
             "description": "User status (\"Active\", \"Terminated\", \"LeaveOfAbsence\", \"All\", or \"Default\")",
             "schema": {
               "type": "object",
-              "properties": []
+              "properties": {}
             }
           },
           {
@@ -14151,7 +14353,7 @@
               "type": "array",
               "items": {
                 "type": "object",
-                "properties": []
+                "properties": {}
               }
             }
           },
@@ -14174,7 +14376,7 @@
               "type": "array",
               "items": {
                 "type": "object",
-                "properties": []
+                "properties": {}
               }
             }
           },
@@ -14186,7 +14388,7 @@
               "type": "array",
               "items": {
                 "type": "object",
-                "properties": []
+                "properties": {}
               }
             }
           },
@@ -14311,10 +14513,14 @@
               "type": "array",
               "items": {
                 "type": "object",
-                "properties": [
-                  null,
-                  null
-                ]
+                "properties": {
+                  "Type": {
+                    "type": "string"
+                  },
+                  "Value": {
+                    "type": "string"
+                  }
+                }
               }
             }
           },
@@ -14392,10 +14598,14 @@
               "type": "array",
               "items": {
                 "type": "object",
-                "properties": [
-                  null,
-                  null
-                ]
+                "properties": {
+                  "Type": {
+                    "type": "string"
+                  },
+                  "Value": {
+                    "type": "string"
+                  }
+                }
               }
             }
           }
@@ -14424,10 +14634,14 @@
               "type": "array",
               "items": {
                 "type": "object",
-                "properties": [
-                  null,
-                  null
-                ]
+                "properties": {
+                  "Type": {
+                    "type": "string"
+                  },
+                  "Value": {
+                    "type": "string"
+                  }
+                }
               }
             }
           }
@@ -14456,10 +14670,14 @@
               "type": "array",
               "items": {
                 "type": "object",
-                "properties": [
-                  null,
-                  null
-                ]
+                "properties": {
+                  "Type": {
+                    "type": "string"
+                  },
+                  "Value": {
+                    "type": "string"
+                  }
+                }
               }
             }
           }
@@ -14654,7 +14872,7 @@
             "description": "New user type (\"All\", \"User\", or \"Visitor\")",
             "schema": {
               "type": "object",
-              "properties": []
+              "properties": {}
             }
           },
           {
@@ -14905,11 +15123,17 @@
               "type": "array",
               "items": {
                 "type": "object",
-                "properties": [
-                  null,
-                  null,
-                  null
-                ]
+                "properties": {
+                  "Id": {
+                    "type": "string"
+                  },
+                  "Type": {
+                    "type": "string"
+                  },
+                  "EntityTypeName": {
+                    "type": "string"
+                  }
+                }
               }
             }
           }
@@ -14940,11 +15164,17 @@
               "type": "array",
               "items": {
                 "type": "object",
-                "properties": [
-                  null,
-                  null,
-                  null
-                ]
+                "properties": {
+                  "Id": {
+                    "type": "string"
+                  },
+                  "Type": {
+                    "type": "string"
+                  },
+                  "EntityTypeName": {
+                    "type": "string"
+                  }
+                }
               }
             }
           }
@@ -14975,11 +15205,17 @@
               "type": "array",
               "items": {
                 "type": "object",
-                "properties": [
-                  null,
-                  null,
-                  null
-                ]
+                "properties": {
+                  "Id": {
+                    "type": "string"
+                  },
+                  "Type": {
+                    "type": "string"
+                  },
+                  "EntityTypeName": {
+                    "type": "string"
+                  }
+                }
               }
             }
           }
@@ -15872,28 +16108,68 @@
               "type": "array",
               "items": {
                 "type": "object",
-                "properties": [
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  null
-                ]
+                "properties": {
+                  "fileId": {
+                    "type": "string"
+                  },
+                  "fileName": {
+                    "type": "string"
+                  },
+                  "size": {
+                    "type": "string"
+                  },
+                  "contentType": {
+                    "type": "string"
+                  },
+                  "needSaveToTemp": {
+                    "type": "string"
+                  },
+                  "contentId": {
+                    "type": "string"
+                  },
+                  "fileNumber": {
+                    "type": "string"
+                  },
+                  "storedName": {
+                    "type": "string"
+                  },
+                  "streamId": {
+                    "type": "string"
+                  },
+                  "attachedAsLink": {
+                    "type": "string"
+                  },
+                  "tempStoredUrl": {
+                    "type": "string"
+                  },
+                  "isTemp": {
+                    "type": "string"
+                  },
+                  "storedFileUrl": {
+                    "type": "string"
+                  },
+                  "data": {
+                    "type": "string"
+                  },
+                  "dataStream": {
+                    "type": "string"
+                  },
+                  "user": {
+                    "type": "string"
+                  },
+                  "tenant": {
+                    "type": "string"
+                  },
+                  "isEmbedded": {
+                    "type": "string"
+                  },
+                  "contentLocation": {
+                    "type": "string"
+                  },
+                  "mailboxId": {
+                    "type": "string"
+                  }
+                }
               }
             }
           },
@@ -15903,7 +16179,7 @@
             "description": "Sharing mode for the links of the attached files",
             "schema": {
               "type": "object",
-              "properties": []
+              "properties": {}
             }
           },
           {
@@ -16103,28 +16379,68 @@
               "type": "array",
               "items": {
                 "type": "object",
-                "properties": [
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  null
-                ]
+                "properties": {
+                  "fileId": {
+                    "type": "string"
+                  },
+                  "fileName": {
+                    "type": "string"
+                  },
+                  "size": {
+                    "type": "string"
+                  },
+                  "contentType": {
+                    "type": "string"
+                  },
+                  "needSaveToTemp": {
+                    "type": "string"
+                  },
+                  "contentId": {
+                    "type": "string"
+                  },
+                  "fileNumber": {
+                    "type": "string"
+                  },
+                  "storedName": {
+                    "type": "string"
+                  },
+                  "streamId": {
+                    "type": "string"
+                  },
+                  "attachedAsLink": {
+                    "type": "string"
+                  },
+                  "tempStoredUrl": {
+                    "type": "string"
+                  },
+                  "isTemp": {
+                    "type": "string"
+                  },
+                  "storedFileUrl": {
+                    "type": "string"
+                  },
+                  "data": {
+                    "type": "string"
+                  },
+                  "dataStream": {
+                    "type": "string"
+                  },
+                  "user": {
+                    "type": "string"
+                  },
+                  "tenant": {
+                    "type": "string"
+                  },
+                  "isEmbedded": {
+                    "type": "string"
+                  },
+                  "contentLocation": {
+                    "type": "string"
+                  },
+                  "mailboxId": {
+                    "type": "string"
+                  }
+                }
               }
             }
           },
@@ -16247,28 +16563,68 @@
               "type": "array",
               "items": {
                 "type": "object",
-                "properties": [
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  null
-                ]
+                "properties": {
+                  "fileId": {
+                    "type": "string"
+                  },
+                  "fileName": {
+                    "type": "string"
+                  },
+                  "size": {
+                    "type": "string"
+                  },
+                  "contentType": {
+                    "type": "string"
+                  },
+                  "needSaveToTemp": {
+                    "type": "string"
+                  },
+                  "contentId": {
+                    "type": "string"
+                  },
+                  "fileNumber": {
+                    "type": "string"
+                  },
+                  "storedName": {
+                    "type": "string"
+                  },
+                  "streamId": {
+                    "type": "string"
+                  },
+                  "attachedAsLink": {
+                    "type": "string"
+                  },
+                  "tempStoredUrl": {
+                    "type": "string"
+                  },
+                  "isTemp": {
+                    "type": "string"
+                  },
+                  "storedFileUrl": {
+                    "type": "string"
+                  },
+                  "data": {
+                    "type": "string"
+                  },
+                  "dataStream": {
+                    "type": "string"
+                  },
+                  "user": {
+                    "type": "string"
+                  },
+                  "tenant": {
+                    "type": "string"
+                  },
+                  "isEmbedded": {
+                    "type": "string"
+                  },
+                  "contentLocation": {
+                    "type": "string"
+                  },
+                  "mailboxId": {
+                    "type": "string"
+                  }
+                }
               }
             }
           },
@@ -16381,11 +16737,17 @@
               "type": "array",
               "items": {
                 "type": "object",
-                "properties": [
-                  null,
-                  null,
-                  null
-                ]
+                "properties": {
+                  "Id": {
+                    "type": "string"
+                  },
+                  "Type": {
+                    "type": "string"
+                  },
+                  "EntityTypeName": {
+                    "type": "string"
+                  }
+                }
               }
             }
           }
@@ -16581,15 +16943,29 @@
             "description": "Filter parameters: ID, name, position, enabled, conditions, actions, options",
             "schema": {
               "type": "object",
-              "properties": [
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null
-              ]
+              "properties": {
+                "Id": {
+                  "type": "string"
+                },
+                "Name": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "Enabled": {
+                  "type": "string"
+                },
+                "Conditions": {
+                  "type": "string"
+                },
+                "Actions": {
+                  "type": "string"
+                },
+                "Options": {
+                  "type": "string"
+                }
+              }
             }
           }
         ]
@@ -16607,15 +16983,29 @@
             "description": "New filter parameters: ID, name, position, enabled, conditions, actions, options",
             "schema": {
               "type": "object",
-              "properties": [
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null
-              ]
+              "properties": {
+                "Id": {
+                  "type": "string"
+                },
+                "Name": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "Enabled": {
+                  "type": "string"
+                },
+                "Conditions": {
+                  "type": "string"
+                },
+                "Actions": {
+                  "type": "string"
+                },
+                "Options": {
+                  "type": "string"
+                }
+              }
             }
           }
         ]
@@ -16654,15 +17044,29 @@
             "description": "Filter parameters: ID, name, position, enabled, conditions, actions, options",
             "schema": {
               "type": "object",
-              "properties": [
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null
-              ]
+              "properties": {
+                "Id": {
+                  "type": "string"
+                },
+                "Name": {
+                  "type": "string"
+                },
+                "Position": {
+                  "type": "string"
+                },
+                "Enabled": {
+                  "type": "string"
+                },
+                "Conditions": {
+                  "type": "string"
+                },
+                "Actions": {
+                  "type": "string"
+                },
+                "Options": {
+                  "type": "string"
+                }
+              }
             }
           },
           {
@@ -16754,7 +17158,7 @@
               "type": "array",
               "items": {
                 "type": "object",
-                "properties": []
+                "properties": {}
               }
             }
           },
@@ -17343,7 +17747,7 @@
             "description": "Encryption type for the IMAP or POP server: 0 - None, 1 - SSL, 2 - StartTLS",
             "schema": {
               "type": "object",
-              "properties": []
+              "properties": {}
             }
           },
           {
@@ -17352,7 +17756,7 @@
             "description": "Encryption type for the SMTP server: 0 - None, 1 - SSL, 2 - StartTLS",
             "schema": {
               "type": "object",
-              "properties": []
+              "properties": {}
             }
           },
           {
@@ -17361,7 +17765,7 @@
             "description": "Authentication type for the IMAP or POP server: 0 - None, 1 - Login, 4 - CramMd5, 5 - OAuth2",
             "schema": {
               "type": "object",
-              "properties": []
+              "properties": {}
             }
           },
           {
@@ -17370,7 +17774,7 @@
             "description": "Authentication type for the SMTP server: 0 - None, 1 - Login, 4 - CramMd5, 5 - OAuth2",
             "schema": {
               "type": "object",
-              "properties": []
+              "properties": {}
             }
           }
         ]
@@ -17484,7 +17888,7 @@
             "description": "New encryption type for the IMAP or POP server: 0 - None, 1 - SSL, 2 - StartTLS",
             "schema": {
               "type": "object",
-              "properties": []
+              "properties": {}
             }
           },
           {
@@ -17493,7 +17897,7 @@
             "description": "New encryption type for the SMTP server: 0 - None, 1 - SSL, 2 - StartTLS",
             "schema": {
               "type": "object",
-              "properties": []
+              "properties": {}
             }
           },
           {
@@ -17502,7 +17906,7 @@
             "description": "New authentication type for the IMAP or POP server: 0 - None, 1 - Login, 4 - CramMd5, 5 - OAuth2",
             "schema": {
               "type": "object",
-              "properties": []
+              "properties": {}
             }
           },
           {
@@ -17511,7 +17915,7 @@
             "description": "New authentication type for the SMTP server: 0 - None, 1 - Login, 4 - CramMd5, 5 - OAuth2",
             "schema": {
               "type": "object",
-              "properties": []
+              "properties": {}
             }
           }
         ]
@@ -17885,7 +18289,7 @@
             "description": "Information type",
             "schema": {
               "type": "object",
-              "properties": []
+              "properties": {}
             }
           },
           {
@@ -19289,7 +19693,7 @@
             "description": "Employee type (User or Visitor)",
             "schema": {
               "type": "object",
-              "properties": []
+              "properties": {}
             }
           }
         ]
@@ -19363,7 +19767,7 @@
             "description": "Storage type (\"Documents\", \"ThridpartyDocuments\", \"CustomCloud\", \"Local\", \"DataStore\", or \"ThirdPartyConsumer\")",
             "schema": {
               "type": "object",
-              "properties": []
+              "properties": {}
             }
           },
           {
@@ -19391,11 +19795,17 @@
             "description": "Cron parameters",
             "schema": {
               "type": "object",
-              "properties": [
-                null,
-                null,
-                null
-              ]
+              "properties": {
+                "Period": {
+                  "type": "string"
+                },
+                "Hour": {
+                  "type": "string"
+                },
+                "Day": {
+                  "type": "string"
+                }
+              }
             }
           },
           {
@@ -19432,7 +19842,7 @@
             "description": "Storage type (\"Documents\", \"ThridpartyDocuments\", \"CustomCloud\", \"Local\", \"DataStore\", or \"ThirdPartyConsumer\")",
             "schema": {
               "type": "object",
-              "properties": []
+              "properties": {}
             }
           },
           {
@@ -19525,7 +19935,7 @@
             "description": "Storage type (\"Documents\", \"ThridpartyDocuments\", \"CustomCloud\", \"Local\", \"DataStore\", or \"ThirdPartyConsumer\")",
             "schema": {
               "type": "object",
-              "properties": []
+              "properties": {}
             }
           },
           {
@@ -20600,7 +21010,7 @@
             "description": "Link type",
             "schema": {
               "type": "object",
-              "properties": []
+              "properties": {}
             }
           }
         ]
@@ -21763,19 +22173,41 @@
             "description": "Task status",
             "schema": {
               "type": "object",
-              "properties": [
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null
-              ]
+              "properties": {
+                "StatusType": {
+                  "type": "string"
+                },
+                "CanChangeAvailable": {
+                  "type": "string"
+                },
+                "Id": {
+                  "type": "string"
+                },
+                "Image": {
+                  "type": "string"
+                },
+                "ImageType": {
+                  "type": "string"
+                },
+                "Title": {
+                  "type": "string"
+                },
+                "Description": {
+                  "type": "string"
+                },
+                "Color": {
+                  "type": "string"
+                },
+                "Order": {
+                  "type": "string"
+                },
+                "IsDefault": {
+                  "type": "string"
+                },
+                "Available": {
+                  "type": "string"
+                }
+              }
             }
           }
         ]
@@ -21793,19 +22225,41 @@
             "description": "New task status",
             "schema": {
               "type": "object",
-              "properties": [
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null
-              ]
+              "properties": {
+                "StatusType": {
+                  "type": "string"
+                },
+                "CanChangeAvailable": {
+                  "type": "string"
+                },
+                "Id": {
+                  "type": "string"
+                },
+                "Image": {
+                  "type": "string"
+                },
+                "ImageType": {
+                  "type": "string"
+                },
+                "Title": {
+                  "type": "string"
+                },
+                "Description": {
+                  "type": "string"
+                },
+                "Color": {
+                  "type": "string"
+                },
+                "Order": {
+                  "type": "string"
+                },
+                "IsDefault": {
+                  "type": "string"
+                },
+                "Available": {
+                  "type": "string"
+                }
+              }
             }
           }
         ]
@@ -21834,19 +22288,41 @@
               "type": "array",
               "items": {
                 "type": "object",
-                "properties": [
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  null
-                ]
+                "properties": {
+                  "StatusType": {
+                    "type": "string"
+                  },
+                  "CanChangeAvailable": {
+                    "type": "string"
+                  },
+                  "Id": {
+                    "type": "string"
+                  },
+                  "Image": {
+                    "type": "string"
+                  },
+                  "ImageType": {
+                    "type": "string"
+                  },
+                  "Title": {
+                    "type": "string"
+                  },
+                  "Description": {
+                    "type": "string"
+                  },
+                  "Color": {
+                    "type": "string"
+                  },
+                  "Order": {
+                    "type": "string"
+                  },
+                  "IsDefault": {
+                    "type": "string"
+                  },
+                  "Available": {
+                    "type": "string"
+                  }
+                }
               }
             }
           }
@@ -21960,7 +22436,7 @@
               "type": "array",
               "items": {
                 "type": "object",
-                "properties": []
+                "properties": {}
               }
             }
           }
@@ -22156,7 +22632,7 @@
             "description": "New message status (\"Open\" or \"Archived\")",
             "schema": {
               "type": "object",
-              "properties": []
+              "properties": {}
             }
           }
         ]
@@ -22460,7 +22936,7 @@
             "description": "Report type",
             "schema": {
               "type": "object",
-              "properties": []
+              "properties": {}
             }
           },
           {
@@ -22512,7 +22988,7 @@
             "description": "Report time interval",
             "schema": {
               "type": "object",
-              "properties": []
+              "properties": {}
             }
           },
           {
@@ -22636,7 +23112,7 @@
             "description": "New report type",
             "schema": {
               "type": "object",
-              "properties": []
+              "properties": {}
             }
           },
           {
@@ -22688,7 +23164,7 @@
             "description": "New report time interval",
             "schema": {
               "type": "object",
-              "properties": []
+              "properties": {}
             }
           },
           {
@@ -23025,22 +23501,50 @@
               "type": "array",
               "items": {
                 "type": "object",
-                "properties": [
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  null
-                ]
+                "properties": {
+                  "ID": {
+                    "type": "string"
+                  },
+                  "ProjectID": {
+                    "type": "string"
+                  },
+                  "CanReadFiles": {
+                    "type": "string"
+                  },
+                  "CanReadMilestones": {
+                    "type": "string"
+                  },
+                  "CanReadMessages": {
+                    "type": "string"
+                  },
+                  "CanReadTasks": {
+                    "type": "string"
+                  },
+                  "CanReadContacts": {
+                    "type": "string"
+                  },
+                  "IsVisitor": {
+                    "type": "string"
+                  },
+                  "IsFullAdmin": {
+                    "type": "string"
+                  },
+                  "UserInfo": {
+                    "type": "string"
+                  },
+                  "IsAdmin": {
+                    "type": "string"
+                  },
+                  "IsManager": {
+                    "type": "string"
+                  },
+                  "IsRemovedFromTeam": {
+                    "type": "string"
+                  },
+                  "ProjectTeamSecurity": {
+                    "type": "string"
+                  }
+                }
               }
             }
           },
@@ -23063,35 +23567,89 @@
               "type": "array",
               "items": {
                 "type": "object",
-                "properties": [
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  null
-                ]
+                "properties": {
+                  "EntityType": {
+                    "type": "string"
+                  },
+                  "ItemPath": {
+                    "type": "string"
+                  },
+                  "Priority": {
+                    "type": "string"
+                  },
+                  "Status": {
+                    "type": "string"
+                  },
+                  "CustomTaskStatus": {
+                    "type": "string"
+                  },
+                  "Milestone": {
+                    "type": "string"
+                  },
+                  "SortOrder": {
+                    "type": "string"
+                  },
+                  "Deadline": {
+                    "type": "string"
+                  },
+                  "SubTasks": {
+                    "type": "string"
+                  },
+                  "Responsibles": {
+                    "type": "string"
+                  },
+                  "Links": {
+                    "type": "string"
+                  },
+                  "MilestoneDesc": {
+                    "type": "string"
+                  },
+                  "StatusChangedOn": {
+                    "type": "string"
+                  },
+                  "StartDate": {
+                    "type": "string"
+                  },
+                  "Security": {
+                    "type": "string"
+                  },
+                  "Progress": {
+                    "type": "string"
+                  },
+                  "Title": {
+                    "type": "string"
+                  },
+                  "Description": {
+                    "type": "string"
+                  },
+                  "HtmlTitle": {
+                    "type": "string"
+                  },
+                  "Project": {
+                    "type": "string"
+                  },
+                  "CreateBy": {
+                    "type": "string"
+                  },
+                  "CreateOn": {
+                    "type": "string"
+                  },
+                  "LastModifiedOn": {
+                    "type": "string"
+                  },
+                  "LastModifiedBy": {
+                    "type": "string"
+                  },
+                  "NotifyId": {
+                    "type": "string"
+                  },
+                  "ID": {
+                    "type": "string"
+                  },
+                  "UniqID": {
+                    "type": "string"
+                  }
+                }
               }
             }
           },
@@ -23103,29 +23661,71 @@
               "type": "array",
               "items": {
                 "type": "object",
-                "properties": [
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  null
-                ]
+                "properties": {
+                  "EntityType": {
+                    "type": "string"
+                  },
+                  "ItemPath": {
+                    "type": "string"
+                  },
+                  "Responsible": {
+                    "type": "string"
+                  },
+                  "Status": {
+                    "type": "string"
+                  },
+                  "IsNotify": {
+                    "type": "string"
+                  },
+                  "IsKey": {
+                    "type": "string"
+                  },
+                  "DeadLine": {
+                    "type": "string"
+                  },
+                  "ActiveTaskCount": {
+                    "type": "string"
+                  },
+                  "ClosedTaskCount": {
+                    "type": "string"
+                  },
+                  "StatusChangedOn": {
+                    "type": "string"
+                  },
+                  "Title": {
+                    "type": "string"
+                  },
+                  "Description": {
+                    "type": "string"
+                  },
+                  "HtmlTitle": {
+                    "type": "string"
+                  },
+                  "Project": {
+                    "type": "string"
+                  },
+                  "CreateBy": {
+                    "type": "string"
+                  },
+                  "CreateOn": {
+                    "type": "string"
+                  },
+                  "LastModifiedOn": {
+                    "type": "string"
+                  },
+                  "LastModifiedBy": {
+                    "type": "string"
+                  },
+                  "NotifyId": {
+                    "type": "string"
+                  },
+                  "ID": {
+                    "type": "string"
+                  },
+                  "UniqID": {
+                    "type": "string"
+                  }
+                }
               }
             }
           },
@@ -23199,22 +23799,50 @@
               "type": "array",
               "items": {
                 "type": "object",
-                "properties": [
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  null
-                ]
+                "properties": {
+                  "ID": {
+                    "type": "string"
+                  },
+                  "ProjectID": {
+                    "type": "string"
+                  },
+                  "CanReadFiles": {
+                    "type": "string"
+                  },
+                  "CanReadMilestones": {
+                    "type": "string"
+                  },
+                  "CanReadMessages": {
+                    "type": "string"
+                  },
+                  "CanReadTasks": {
+                    "type": "string"
+                  },
+                  "CanReadContacts": {
+                    "type": "string"
+                  },
+                  "IsVisitor": {
+                    "type": "string"
+                  },
+                  "IsFullAdmin": {
+                    "type": "string"
+                  },
+                  "UserInfo": {
+                    "type": "string"
+                  },
+                  "IsAdmin": {
+                    "type": "string"
+                  },
+                  "IsManager": {
+                    "type": "string"
+                  },
+                  "IsRemovedFromTeam": {
+                    "type": "string"
+                  },
+                  "ProjectTeamSecurity": {
+                    "type": "string"
+                  }
+                }
               }
             }
           },
@@ -23687,7 +24315,7 @@
             "description": "Security rights",
             "schema": {
               "type": "object",
-              "properties": []
+              "properties": {}
             }
           },
           {
@@ -23971,7 +24599,7 @@
             "description": "Action",
             "schema": {
               "type": "object",
-              "properties": []
+              "properties": {}
             }
           },
           {
@@ -24015,7 +24643,7 @@
             "description": "Product",
             "schema": {
               "type": "object",
-              "properties": []
+              "properties": {}
             }
           },
           {
@@ -24024,7 +24652,7 @@
             "description": "Module",
             "schema": {
               "type": "object",
-              "properties": []
+              "properties": {}
             }
           },
           {
@@ -24033,7 +24661,7 @@
             "description": "Action type",
             "schema": {
               "type": "object",
-              "properties": []
+              "properties": {}
             }
           },
           {
@@ -24042,7 +24670,7 @@
             "description": "Action",
             "schema": {
               "type": "object",
-              "properties": []
+              "properties": {}
             }
           },
           {
@@ -24051,7 +24679,7 @@
             "description": "Entry",
             "schema": {
               "type": "object",
-              "properties": []
+              "properties": {}
             }
           },
           {
@@ -24106,7 +24734,7 @@
               "type": "array",
               "items": {
                 "type": "object",
-                "properties": []
+                "properties": {}
               }
             }
           },
@@ -24118,7 +24746,7 @@
               "type": "array",
               "items": {
                 "type": "object",
-                "properties": []
+                "properties": {}
               }
             }
           }
@@ -24164,11 +24792,17 @@
             "description": "Audit trail settings",
             "schema": {
               "type": "object",
-              "properties": [
-                null,
-                null,
-                null
-              ]
+              "properties": {
+                "LoginHistoryLifeTime": {
+                  "type": "string"
+                },
+                "AuditTrailLifeTime": {
+                  "type": "string"
+                },
+                "ID": {
+                  "type": "string"
+                }
+              }
             }
           }
         ]
@@ -24303,7 +24937,7 @@
             "description": "Specifies for whom impersonation is enabled (DisableForAdmins, EnableForAllFullAdmins, or EnableWithLimits)",
             "schema": {
               "type": "object",
-              "properties": []
+              "properties": {}
             }
           },
           {
@@ -24456,7 +25090,7 @@
             "description": "TFA type (None, Sms, or App)",
             "schema": {
               "type": "object",
-              "properties": []
+              "properties": {}
             }
           },
           {
@@ -24655,15 +25289,29 @@
             "description": "Item parameters",
             "schema": {
               "type": "object",
-              "properties": [
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null
-              ]
+              "properties": {
+                "Id": {
+                  "type": "string"
+                },
+                "Label": {
+                  "type": "string"
+                },
+                "Url": {
+                  "type": "string"
+                },
+                "BigImg": {
+                  "type": "string"
+                },
+                "SmallImg": {
+                  "type": "string"
+                },
+                "ShowInMenu": {
+                  "type": "string"
+                },
+                "ShowOnHomePage": {
+                  "type": "string"
+                }
+              }
             }
           }
         ]
@@ -24898,17 +25546,35 @@
             "description": "SMTP settings",
             "schema": {
               "type": "object",
-              "properties": [
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null
-              ]
+              "properties": {
+                "Host": {
+                  "type": "string"
+                },
+                "Port": {
+                  "type": "string"
+                },
+                "SenderAddress": {
+                  "type": "string"
+                },
+                "SenderDisplayName": {
+                  "type": "string"
+                },
+                "CredentialsUserName": {
+                  "type": "string"
+                },
+                "CredentialsUserPassword": {
+                  "type": "string"
+                },
+                "EnableSSL": {
+                  "type": "string"
+                },
+                "EnableAuth": {
+                  "type": "string"
+                },
+                "UseNtlm": {
+                  "type": "string"
+                }
+              }
             }
           }
         ]
@@ -25477,10 +26143,14 @@
               "type": "array",
               "items": {
                 "type": "object",
-                "properties": [
-                  null,
-                  null
-                ]
+                "properties": {
+                  "Ip": {
+                    "type": "string"
+                  },
+                  "ForAdmin": {
+                    "type": "string"
+                  }
+                }
               }
             }
           }
