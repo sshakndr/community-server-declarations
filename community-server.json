@@ -175,21 +175,11 @@
               "items": {
                 "type": "object",
                 "properties": [
-                  {
-                    "type": "actionId"
-                  },
-                  {
-                    "type": "itemId"
-                  },
-                  {
-                    "type": "isGroup"
-                  },
-                  {
-                    "type": "Id"
-                  },
-                  {
-                    "type": "IsGroup"
-                  }
+                  null,
+                  null,
+                  null,
+                  null,
+                  null
                 ]
               }
             }
@@ -559,21 +549,11 @@
               "items": {
                 "type": "object",
                 "properties": [
-                  {
-                    "type": "actionId"
-                  },
-                  {
-                    "type": "itemId"
-                  },
-                  {
-                    "type": "isGroup"
-                  },
-                  {
-                    "type": "Id"
-                  },
-                  {
-                    "type": "IsGroup"
-                  }
+                  null,
+                  null,
+                  null,
+                  null,
+                  null
                 ]
               }
             }
@@ -663,21 +643,11 @@
               "items": {
                 "type": "object",
                 "properties": [
-                  {
-                    "type": "actionId"
-                  },
-                  {
-                    "type": "itemId"
-                  },
-                  {
-                    "type": "isGroup"
-                  },
-                  {
-                    "type": "Id"
-                  },
-                  {
-                    "type": "IsGroup"
-                  }
+                  null,
+                  null,
+                  null,
+                  null,
+                  null
                 ]
               }
             }
@@ -775,21 +745,11 @@
               "items": {
                 "type": "object",
                 "properties": [
-                  {
-                    "type": "actionId"
-                  },
-                  {
-                    "type": "itemId"
-                  },
-                  {
-                    "type": "isGroup"
-                  },
-                  {
-                    "type": "Id"
-                  },
-                  {
-                    "type": "IsGroup"
-                  }
+                  null,
+                  null,
+                  null,
+                  null,
+                  null
                 ]
               }
             }
@@ -1155,21 +1115,11 @@
               "items": {
                 "type": "object",
                 "properties": [
-                  {
-                    "type": "actionId"
-                  },
-                  {
-                    "type": "itemId"
-                  },
-                  {
-                    "type": "isGroup"
-                  },
-                  {
-                    "type": "Id"
-                  },
-                  {
-                    "type": "IsGroup"
-                  }
+                  null,
+                  null,
+                  null,
+                  null,
+                  null
                 ]
               }
             }
@@ -1233,21 +1183,11 @@
               "items": {
                 "type": "object",
                 "properties": [
-                  {
-                    "type": "actionId"
-                  },
-                  {
-                    "type": "itemId"
-                  },
-                  {
-                    "type": "isGroup"
-                  },
-                  {
-                    "type": "Id"
-                  },
-                  {
-                    "type": "IsGroup"
-                  }
+                  null,
+                  null,
+                  null,
+                  null,
+                  null
                 ]
               }
             }
@@ -4086,15 +4026,9 @@
             "schema": {
               "type": "object",
               "properties": [
-                {
-                  "type": "Enabled"
-                },
-                {
-                  "type": "From"
-                },
-                {
-                  "type": "To"
-                }
+                null,
+                null,
+                null
               ]
             }
           },
@@ -4146,21 +4080,11 @@
             "schema": {
               "type": "object",
               "properties": [
-                {
-                  "type": "Id"
-                },
-                {
-                  "type": "Name"
-                },
-                {
-                  "type": "Size"
-                },
-                {
-                  "type": "WaitUrl"
-                },
-                {
-                  "type": "WaitTime"
-                }
+                null,
+                null,
+                null,
+                null,
+                null
               ]
             }
           },
@@ -9044,30 +8968,14 @@
               "items": {
                 "type": "object",
                 "properties": [
-                  {
-                    "type": "FromCurrency"
-                  },
-                  {
-                    "type": "ToCurrency"
-                  },
-                  {
-                    "type": "Rate"
-                  },
-                  {
-                    "type": "CreateBy"
-                  },
-                  {
-                    "type": "CreateOn"
-                  },
-                  {
-                    "type": "LastModifedBy"
-                  },
-                  {
-                    "type": "LastModifedOn"
-                  },
-                  {
-                    "type": "ID"
-                  }
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null
                 ]
               }
             }
@@ -9092,30 +9000,14 @@
               "items": {
                 "type": "object",
                 "properties": [
-                  {
-                    "type": "FromCurrency"
-                  },
-                  {
-                    "type": "ToCurrency"
-                  },
-                  {
-                    "type": "Rate"
-                  },
-                  {
-                    "type": "CreateBy"
-                  },
-                  {
-                    "type": "CreateOn"
-                  },
-                  {
-                    "type": "LastModifedBy"
-                  },
-                  {
-                    "type": "LastModifedOn"
-                  },
-                  {
-                    "type": "ID"
-                  }
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null
                 ]
               }
             }
@@ -9479,36 +9371,16 @@
               "items": {
                 "type": "object",
                 "properties": [
-                  {
-                    "type": "InvoiceID"
-                  },
-                  {
-                    "type": "InvoiceItemID"
-                  },
-                  {
-                    "type": "InvoiceTax1ID"
-                  },
-                  {
-                    "type": "InvoiceTax2ID"
-                  },
-                  {
-                    "type": "SortOrder"
-                  },
-                  {
-                    "type": "Description"
-                  },
-                  {
-                    "type": "Quantity"
-                  },
-                  {
-                    "type": "Price"
-                  },
-                  {
-                    "type": "Discount"
-                  },
-                  {
-                    "type": "ID"
-                  }
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null
                 ]
               }
             }
@@ -9653,36 +9525,16 @@
               "items": {
                 "type": "object",
                 "properties": [
-                  {
-                    "type": "InvoiceID"
-                  },
-                  {
-                    "type": "InvoiceItemID"
-                  },
-                  {
-                    "type": "InvoiceTax1ID"
-                  },
-                  {
-                    "type": "InvoiceTax2ID"
-                  },
-                  {
-                    "type": "SortOrder"
-                  },
-                  {
-                    "type": "Description"
-                  },
-                  {
-                    "type": "Quantity"
-                  },
-                  {
-                    "type": "Price"
-                  },
-                  {
-                    "type": "Discount"
-                  },
-                  {
-                    "type": "ID"
-                  }
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null
                 ]
               }
             }
@@ -11142,30 +10994,14 @@
             "schema": {
               "type": "object",
               "properties": [
-                {
-                  "type": "Street"
-                },
-                {
-                  "type": "City"
-                },
-                {
-                  "type": "State"
-                },
-                {
-                  "type": "Zip"
-                },
-                {
-                  "type": "Country"
-                },
-                {
-                  "type": "Category"
-                },
-                {
-                  "type": "CategoryName"
-                },
-                {
-                  "type": "IsPrimary"
-                }
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null
               ]
             }
           }
@@ -11203,30 +11039,14 @@
             "schema": {
               "type": "object",
               "properties": [
-                {
-                  "type": "Street"
-                },
-                {
-                  "type": "City"
-                },
-                {
-                  "type": "State"
-                },
-                {
-                  "type": "Zip"
-                },
-                {
-                  "type": "Country"
-                },
-                {
-                  "type": "Category"
-                },
-                {
-                  "type": "CategoryName"
-                },
-                {
-                  "type": "IsPrimary"
-                }
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null
               ]
             }
           }
@@ -13381,12 +13201,8 @@
               "items": {
                 "type": "object",
                 "properties": [
-                  {
-                    "type": "ShareTo"
-                  },
-                  {
-                    "type": "Access"
-                  }
+                  null,
+                  null
                 ]
               }
             }
@@ -13414,12 +13230,8 @@
             "schema": {
               "type": "object",
               "properties": [
-                {
-                  "type": "DenyDownload"
-                },
-                {
-                  "type": "DenySharing"
-                }
+                null,
+                null
               ]
             }
           }
@@ -13468,12 +13280,8 @@
               "items": {
                 "type": "object",
                 "properties": [
-                  {
-                    "type": "ShareTo"
-                  },
-                  {
-                    "type": "Access"
-                  }
+                  null,
+                  null
                 ]
               }
             }
@@ -13703,9 +13511,7 @@
             "schema": {
               "type": "object",
               "properties": [
-                {
-                  "type": "FormFilling"
-                }
+                null
               ]
             }
           }
@@ -13746,9 +13552,7 @@
             "schema": {
               "type": "object",
               "properties": [
-                {
-                  "type": "FormFilling"
-                }
+                null
               ]
             }
           }
@@ -14195,15 +13999,9 @@
               "items": {
                 "type": "object",
                 "properties": [
-                  {
-                    "type": "ID"
-                  },
-                  {
-                    "type": "Enabled"
-                  },
-                  {
-                    "type": "Title"
-                  }
+                  null,
+                  null,
+                  null
                 ]
               }
             }
@@ -14514,12 +14312,8 @@
               "items": {
                 "type": "object",
                 "properties": [
-                  {
-                    "type": "Type"
-                  },
-                  {
-                    "type": "Value"
-                  }
+                  null,
+                  null
                 ]
               }
             }
@@ -14599,12 +14393,8 @@
               "items": {
                 "type": "object",
                 "properties": [
-                  {
-                    "type": "Type"
-                  },
-                  {
-                    "type": "Value"
-                  }
+                  null,
+                  null
                 ]
               }
             }
@@ -14635,12 +14425,8 @@
               "items": {
                 "type": "object",
                 "properties": [
-                  {
-                    "type": "Type"
-                  },
-                  {
-                    "type": "Value"
-                  }
+                  null,
+                  null
                 ]
               }
             }
@@ -14671,12 +14457,8 @@
               "items": {
                 "type": "object",
                 "properties": [
-                  {
-                    "type": "Type"
-                  },
-                  {
-                    "type": "Value"
-                  }
+                  null,
+                  null
                 ]
               }
             }
@@ -15124,15 +14906,9 @@
               "items": {
                 "type": "object",
                 "properties": [
-                  {
-                    "type": "Id"
-                  },
-                  {
-                    "type": "Type"
-                  },
-                  {
-                    "type": "EntityTypeName"
-                  }
+                  null,
+                  null,
+                  null
                 ]
               }
             }
@@ -15165,15 +14941,9 @@
               "items": {
                 "type": "object",
                 "properties": [
-                  {
-                    "type": "Id"
-                  },
-                  {
-                    "type": "Type"
-                  },
-                  {
-                    "type": "EntityTypeName"
-                  }
+                  null,
+                  null,
+                  null
                 ]
               }
             }
@@ -15206,15 +14976,9 @@
               "items": {
                 "type": "object",
                 "properties": [
-                  {
-                    "type": "Id"
-                  },
-                  {
-                    "type": "Type"
-                  },
-                  {
-                    "type": "EntityTypeName"
-                  }
+                  null,
+                  null,
+                  null
                 ]
               }
             }
@@ -16109,66 +15873,26 @@
               "items": {
                 "type": "object",
                 "properties": [
-                  {
-                    "type": "fileId"
-                  },
-                  {
-                    "type": "fileName"
-                  },
-                  {
-                    "type": "size"
-                  },
-                  {
-                    "type": "contentType"
-                  },
-                  {
-                    "type": "needSaveToTemp"
-                  },
-                  {
-                    "type": "contentId"
-                  },
-                  {
-                    "type": "fileNumber"
-                  },
-                  {
-                    "type": "storedName"
-                  },
-                  {
-                    "type": "streamId"
-                  },
-                  {
-                    "type": "attachedAsLink"
-                  },
-                  {
-                    "type": "tempStoredUrl"
-                  },
-                  {
-                    "type": "isTemp"
-                  },
-                  {
-                    "type": "storedFileUrl"
-                  },
-                  {
-                    "type": "data"
-                  },
-                  {
-                    "type": "dataStream"
-                  },
-                  {
-                    "type": "user"
-                  },
-                  {
-                    "type": "tenant"
-                  },
-                  {
-                    "type": "isEmbedded"
-                  },
-                  {
-                    "type": "contentLocation"
-                  },
-                  {
-                    "type": "mailboxId"
-                  }
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null
                 ]
               }
             }
@@ -16380,66 +16104,26 @@
               "items": {
                 "type": "object",
                 "properties": [
-                  {
-                    "type": "fileId"
-                  },
-                  {
-                    "type": "fileName"
-                  },
-                  {
-                    "type": "size"
-                  },
-                  {
-                    "type": "contentType"
-                  },
-                  {
-                    "type": "needSaveToTemp"
-                  },
-                  {
-                    "type": "contentId"
-                  },
-                  {
-                    "type": "fileNumber"
-                  },
-                  {
-                    "type": "storedName"
-                  },
-                  {
-                    "type": "streamId"
-                  },
-                  {
-                    "type": "attachedAsLink"
-                  },
-                  {
-                    "type": "tempStoredUrl"
-                  },
-                  {
-                    "type": "isTemp"
-                  },
-                  {
-                    "type": "storedFileUrl"
-                  },
-                  {
-                    "type": "data"
-                  },
-                  {
-                    "type": "dataStream"
-                  },
-                  {
-                    "type": "user"
-                  },
-                  {
-                    "type": "tenant"
-                  },
-                  {
-                    "type": "isEmbedded"
-                  },
-                  {
-                    "type": "contentLocation"
-                  },
-                  {
-                    "type": "mailboxId"
-                  }
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null
                 ]
               }
             }
@@ -16564,66 +16248,26 @@
               "items": {
                 "type": "object",
                 "properties": [
-                  {
-                    "type": "fileId"
-                  },
-                  {
-                    "type": "fileName"
-                  },
-                  {
-                    "type": "size"
-                  },
-                  {
-                    "type": "contentType"
-                  },
-                  {
-                    "type": "needSaveToTemp"
-                  },
-                  {
-                    "type": "contentId"
-                  },
-                  {
-                    "type": "fileNumber"
-                  },
-                  {
-                    "type": "storedName"
-                  },
-                  {
-                    "type": "streamId"
-                  },
-                  {
-                    "type": "attachedAsLink"
-                  },
-                  {
-                    "type": "tempStoredUrl"
-                  },
-                  {
-                    "type": "isTemp"
-                  },
-                  {
-                    "type": "storedFileUrl"
-                  },
-                  {
-                    "type": "data"
-                  },
-                  {
-                    "type": "dataStream"
-                  },
-                  {
-                    "type": "user"
-                  },
-                  {
-                    "type": "tenant"
-                  },
-                  {
-                    "type": "isEmbedded"
-                  },
-                  {
-                    "type": "contentLocation"
-                  },
-                  {
-                    "type": "mailboxId"
-                  }
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null
                 ]
               }
             }
@@ -16738,15 +16382,9 @@
               "items": {
                 "type": "object",
                 "properties": [
-                  {
-                    "type": "Id"
-                  },
-                  {
-                    "type": "Type"
-                  },
-                  {
-                    "type": "EntityTypeName"
-                  }
+                  null,
+                  null,
+                  null
                 ]
               }
             }
@@ -16944,27 +16582,13 @@
             "schema": {
               "type": "object",
               "properties": [
-                {
-                  "type": "Id"
-                },
-                {
-                  "type": "Name"
-                },
-                {
-                  "type": "Position"
-                },
-                {
-                  "type": "Enabled"
-                },
-                {
-                  "type": "Conditions"
-                },
-                {
-                  "type": "Actions"
-                },
-                {
-                  "type": "Options"
-                }
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null
               ]
             }
           }
@@ -16984,27 +16608,13 @@
             "schema": {
               "type": "object",
               "properties": [
-                {
-                  "type": "Id"
-                },
-                {
-                  "type": "Name"
-                },
-                {
-                  "type": "Position"
-                },
-                {
-                  "type": "Enabled"
-                },
-                {
-                  "type": "Conditions"
-                },
-                {
-                  "type": "Actions"
-                },
-                {
-                  "type": "Options"
-                }
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null
               ]
             }
           }
@@ -17045,27 +16655,13 @@
             "schema": {
               "type": "object",
               "properties": [
-                {
-                  "type": "Id"
-                },
-                {
-                  "type": "Name"
-                },
-                {
-                  "type": "Position"
-                },
-                {
-                  "type": "Enabled"
-                },
-                {
-                  "type": "Conditions"
-                },
-                {
-                  "type": "Actions"
-                },
-                {
-                  "type": "Options"
-                }
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null
               ]
             }
           },
@@ -19796,15 +19392,9 @@
             "schema": {
               "type": "object",
               "properties": [
-                {
-                  "type": "Period"
-                },
-                {
-                  "type": "Hour"
-                },
-                {
-                  "type": "Day"
-                }
+                null,
+                null,
+                null
               ]
             }
           },
@@ -22174,39 +21764,17 @@
             "schema": {
               "type": "object",
               "properties": [
-                {
-                  "type": "StatusType"
-                },
-                {
-                  "type": "CanChangeAvailable"
-                },
-                {
-                  "type": "Id"
-                },
-                {
-                  "type": "Image"
-                },
-                {
-                  "type": "ImageType"
-                },
-                {
-                  "type": "Title"
-                },
-                {
-                  "type": "Description"
-                },
-                {
-                  "type": "Color"
-                },
-                {
-                  "type": "Order"
-                },
-                {
-                  "type": "IsDefault"
-                },
-                {
-                  "type": "Available"
-                }
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null
               ]
             }
           }
@@ -22226,39 +21794,17 @@
             "schema": {
               "type": "object",
               "properties": [
-                {
-                  "type": "StatusType"
-                },
-                {
-                  "type": "CanChangeAvailable"
-                },
-                {
-                  "type": "Id"
-                },
-                {
-                  "type": "Image"
-                },
-                {
-                  "type": "ImageType"
-                },
-                {
-                  "type": "Title"
-                },
-                {
-                  "type": "Description"
-                },
-                {
-                  "type": "Color"
-                },
-                {
-                  "type": "Order"
-                },
-                {
-                  "type": "IsDefault"
-                },
-                {
-                  "type": "Available"
-                }
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null
               ]
             }
           }
@@ -22289,39 +21835,17 @@
               "items": {
                 "type": "object",
                 "properties": [
-                  {
-                    "type": "StatusType"
-                  },
-                  {
-                    "type": "CanChangeAvailable"
-                  },
-                  {
-                    "type": "Id"
-                  },
-                  {
-                    "type": "Image"
-                  },
-                  {
-                    "type": "ImageType"
-                  },
-                  {
-                    "type": "Title"
-                  },
-                  {
-                    "type": "Description"
-                  },
-                  {
-                    "type": "Color"
-                  },
-                  {
-                    "type": "Order"
-                  },
-                  {
-                    "type": "IsDefault"
-                  },
-                  {
-                    "type": "Available"
-                  }
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null
                 ]
               }
             }
@@ -23502,48 +23026,20 @@
               "items": {
                 "type": "object",
                 "properties": [
-                  {
-                    "type": "ID"
-                  },
-                  {
-                    "type": "ProjectID"
-                  },
-                  {
-                    "type": "CanReadFiles"
-                  },
-                  {
-                    "type": "CanReadMilestones"
-                  },
-                  {
-                    "type": "CanReadMessages"
-                  },
-                  {
-                    "type": "CanReadTasks"
-                  },
-                  {
-                    "type": "CanReadContacts"
-                  },
-                  {
-                    "type": "IsVisitor"
-                  },
-                  {
-                    "type": "IsFullAdmin"
-                  },
-                  {
-                    "type": "UserInfo"
-                  },
-                  {
-                    "type": "IsAdmin"
-                  },
-                  {
-                    "type": "IsManager"
-                  },
-                  {
-                    "type": "IsRemovedFromTeam"
-                  },
-                  {
-                    "type": "ProjectTeamSecurity"
-                  }
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null
                 ]
               }
             }
@@ -23568,87 +23064,33 @@
               "items": {
                 "type": "object",
                 "properties": [
-                  {
-                    "type": "EntityType"
-                  },
-                  {
-                    "type": "ItemPath"
-                  },
-                  {
-                    "type": "Priority"
-                  },
-                  {
-                    "type": "Status"
-                  },
-                  {
-                    "type": "CustomTaskStatus"
-                  },
-                  {
-                    "type": "Milestone"
-                  },
-                  {
-                    "type": "SortOrder"
-                  },
-                  {
-                    "type": "Deadline"
-                  },
-                  {
-                    "type": "SubTasks"
-                  },
-                  {
-                    "type": "Responsibles"
-                  },
-                  {
-                    "type": "Links"
-                  },
-                  {
-                    "type": "MilestoneDesc"
-                  },
-                  {
-                    "type": "StatusChangedOn"
-                  },
-                  {
-                    "type": "StartDate"
-                  },
-                  {
-                    "type": "Security"
-                  },
-                  {
-                    "type": "Progress"
-                  },
-                  {
-                    "type": "Title"
-                  },
-                  {
-                    "type": "Description"
-                  },
-                  {
-                    "type": "HtmlTitle"
-                  },
-                  {
-                    "type": "Project"
-                  },
-                  {
-                    "type": "CreateBy"
-                  },
-                  {
-                    "type": "CreateOn"
-                  },
-                  {
-                    "type": "LastModifiedOn"
-                  },
-                  {
-                    "type": "LastModifiedBy"
-                  },
-                  {
-                    "type": "NotifyId"
-                  },
-                  {
-                    "type": "ID"
-                  },
-                  {
-                    "type": "UniqID"
-                  }
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null
                 ]
               }
             }
@@ -23662,69 +23104,27 @@
               "items": {
                 "type": "object",
                 "properties": [
-                  {
-                    "type": "EntityType"
-                  },
-                  {
-                    "type": "ItemPath"
-                  },
-                  {
-                    "type": "Responsible"
-                  },
-                  {
-                    "type": "Status"
-                  },
-                  {
-                    "type": "IsNotify"
-                  },
-                  {
-                    "type": "IsKey"
-                  },
-                  {
-                    "type": "DeadLine"
-                  },
-                  {
-                    "type": "ActiveTaskCount"
-                  },
-                  {
-                    "type": "ClosedTaskCount"
-                  },
-                  {
-                    "type": "StatusChangedOn"
-                  },
-                  {
-                    "type": "Title"
-                  },
-                  {
-                    "type": "Description"
-                  },
-                  {
-                    "type": "HtmlTitle"
-                  },
-                  {
-                    "type": "Project"
-                  },
-                  {
-                    "type": "CreateBy"
-                  },
-                  {
-                    "type": "CreateOn"
-                  },
-                  {
-                    "type": "LastModifiedOn"
-                  },
-                  {
-                    "type": "LastModifiedBy"
-                  },
-                  {
-                    "type": "NotifyId"
-                  },
-                  {
-                    "type": "ID"
-                  },
-                  {
-                    "type": "UniqID"
-                  }
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null
                 ]
               }
             }
@@ -23800,48 +23200,20 @@
               "items": {
                 "type": "object",
                 "properties": [
-                  {
-                    "type": "ID"
-                  },
-                  {
-                    "type": "ProjectID"
-                  },
-                  {
-                    "type": "CanReadFiles"
-                  },
-                  {
-                    "type": "CanReadMilestones"
-                  },
-                  {
-                    "type": "CanReadMessages"
-                  },
-                  {
-                    "type": "CanReadTasks"
-                  },
-                  {
-                    "type": "CanReadContacts"
-                  },
-                  {
-                    "type": "IsVisitor"
-                  },
-                  {
-                    "type": "IsFullAdmin"
-                  },
-                  {
-                    "type": "UserInfo"
-                  },
-                  {
-                    "type": "IsAdmin"
-                  },
-                  {
-                    "type": "IsManager"
-                  },
-                  {
-                    "type": "IsRemovedFromTeam"
-                  },
-                  {
-                    "type": "ProjectTeamSecurity"
-                  }
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null
                 ]
               }
             }
@@ -24793,15 +24165,9 @@
             "schema": {
               "type": "object",
               "properties": [
-                {
-                  "type": "LoginHistoryLifeTime"
-                },
-                {
-                  "type": "AuditTrailLifeTime"
-                },
-                {
-                  "type": "ID"
-                }
+                null,
+                null,
+                null
               ]
             }
           }
@@ -25290,27 +24656,13 @@
             "schema": {
               "type": "object",
               "properties": [
-                {
-                  "type": "Id"
-                },
-                {
-                  "type": "Label"
-                },
-                {
-                  "type": "Url"
-                },
-                {
-                  "type": "BigImg"
-                },
-                {
-                  "type": "SmallImg"
-                },
-                {
-                  "type": "ShowInMenu"
-                },
-                {
-                  "type": "ShowOnHomePage"
-                }
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null
               ]
             }
           }
@@ -25547,33 +24899,15 @@
             "schema": {
               "type": "object",
               "properties": [
-                {
-                  "type": "Host"
-                },
-                {
-                  "type": "Port"
-                },
-                {
-                  "type": "SenderAddress"
-                },
-                {
-                  "type": "SenderDisplayName"
-                },
-                {
-                  "type": "CredentialsUserName"
-                },
-                {
-                  "type": "CredentialsUserPassword"
-                },
-                {
-                  "type": "EnableSSL"
-                },
-                {
-                  "type": "EnableAuth"
-                },
-                {
-                  "type": "UseNtlm"
-                }
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null
               ]
             }
           }
@@ -26144,12 +25478,8 @@
               "items": {
                 "type": "object",
                 "properties": [
-                  {
-                    "type": "Ip"
-                  },
-                  {
-                    "type": "ForAdmin"
-                  }
+                  null,
+                  null
                 ]
               }
             }
