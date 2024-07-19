@@ -154,8 +154,7 @@
             "in": "body",
             "description": "New event alert type, in case alert type is set by default",
             "schema": {
-              "type": "object",
-              "properties": {}
+              "type": "object"
             }
           },
           {
@@ -222,6 +221,109 @@
         ]
       }
     },
+    "/api/2.0/CalendarApi/": {
+      "post": {
+        "tags": [
+          "CalendarApi/Calendars and subscriptions"
+        ],
+        "summary": "Create a calendar",
+        "description": "Creates a new calendar with the parameters (name, description, color, etc.) specified in the request.\n\n**Note**: Please note that the list of events in the response will be empty.",
+        "parameters": [
+          {
+            "name": "name",
+            "in": "body",
+            "description": "Calendar name",
+            "schema": {
+              "type": "String"
+            }
+          },
+          {
+            "name": "description",
+            "in": "body",
+            "description": "Calendar description",
+            "schema": {
+              "type": "String"
+            }
+          },
+          {
+            "name": "textColor",
+            "in": "body",
+            "description": "Event text color",
+            "schema": {
+              "type": "String"
+            }
+          },
+          {
+            "name": "backgroundColor",
+            "in": "body",
+            "description": "Event background color",
+            "schema": {
+              "type": "String"
+            }
+          },
+          {
+            "name": "timeZone",
+            "in": "body",
+            "description": "Calendar time zone",
+            "schema": {
+              "type": "String"
+            }
+          },
+          {
+            "name": "alertType",
+            "in": "body",
+            "description": "Event alert type, in case alert type is set by default",
+            "schema": {
+              "type": "object"
+            }
+          },
+          {
+            "name": "sharingOptions",
+            "in": "body",
+            "description": "Calendar sharing options with other users",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "actionId": {
+                    "type": "string"
+                  },
+                  "itemId": {
+                    "type": "string"
+                  },
+                  "isGroup": {
+                    "type": "string"
+                  },
+                  "Id": {
+                    "type": "string"
+                  },
+                  "IsGroup": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "name": "iCalUrl",
+            "in": "body",
+            "description": "iCal URL",
+            "schema": {
+              "type": "String"
+            }
+          },
+          {
+            "name": "isTodo",
+            "in": "body",
+            "description": "Defines if the to-dos are shown in the calendar",
+            "schema": {
+              "type": "Int32"
+            }
+          }
+        ]
+      }
+    },
     "/api/2.0/CalendarApi/{calendarId}/view": {
       "put": {
         "tags": [
@@ -275,8 +377,7 @@
             "in": "body",
             "description": "New event alert type, in case alert type is set by default",
             "schema": {
-              "type": "object",
-              "properties": {}
+              "type": "object"
             }
           },
           {
@@ -538,8 +639,7 @@
             "in": "body",
             "description": "Event notification type",
             "schema": {
-              "type": "object",
-              "properties": {}
+              "type": "object"
             }
           },
           {
@@ -642,8 +742,7 @@
             "in": "body",
             "description": "Event notification type",
             "schema": {
-              "type": "object",
-              "properties": {}
+              "type": "object"
             }
           },
           {
@@ -754,8 +853,7 @@
             "in": "body",
             "description": "New event notification type",
             "schema": {
-              "type": "object",
-              "properties": {}
+              "type": "object"
             }
           },
           {
@@ -799,8 +897,7 @@
             "in": "body",
             "description": "New event status",
             "schema": {
-              "type": "object",
-              "properties": {}
+              "type": "object"
             }
           }
         ]
@@ -1142,8 +1239,7 @@
             "in": "body",
             "description": "Event notification type",
             "schema": {
-              "type": "object",
-              "properties": {}
+              "type": "object"
             }
           },
           {
@@ -1220,8 +1316,7 @@
             "in": "body",
             "description": "New event notification type",
             "schema": {
-              "type": "object",
-              "properties": {}
+              "type": "object"
             }
           },
           {
@@ -1319,8 +1414,7 @@
             "in": "body",
             "description": "The event deletion type: 0 - the single event, 1 - all the following events, 2 - all the event series.",
             "schema": {
-              "type": "object",
-              "properties": {}
+              "type": "object"
             }
           },
           {
@@ -2484,8 +2578,7 @@
             "in": "body",
             "description": "Event type",
             "schema": {
-              "type": "object",
-              "properties": {}
+              "type": "object"
             }
           }
         ]
@@ -2528,8 +2621,7 @@
             "in": "body",
             "description": "New event type",
             "schema": {
-              "type": "object",
-              "properties": {}
+              "type": "object"
             }
           }
         ]
@@ -2916,8 +3008,7 @@
             "in": "body",
             "description": "Topic type",
             "schema": {
-              "type": "object",
-              "properties": {}
+              "type": "object"
             }
           }
         ]
@@ -3906,8 +3997,7 @@
             "in": "body",
             "description": "Number type",
             "schema": {
-              "type": "object",
-              "properties": {}
+              "type": "object"
             }
           },
           {
@@ -4202,8 +4292,7 @@
             "in": "body",
             "description": "Audio type",
             "schema": {
-              "type": "object",
-              "properties": {}
+              "type": "object"
             }
           },
           {
@@ -4312,8 +4401,7 @@
             "schema": {
               "type": "array",
               "items": {
-                "type": "object",
-                "properties": {}
+                "type": "object"
               }
             }
           },
@@ -4346,8 +4434,7 @@
             "schema": {
               "type": "array",
               "items": {
-                "type": "object",
-                "properties": {}
+                "type": "object"
               }
             }
           },
@@ -4567,8 +4654,7 @@
             "schema": {
               "type": "array",
               "items": {
-                "type": "object",
-                "properties": {}
+                "type": "object"
               }
             }
           },
@@ -5956,8 +6042,7 @@
             "in": "body",
             "description": "Report type",
             "schema": {
-              "type": "object",
-              "properties": {}
+              "type": "object"
             }
           },
           {
@@ -5965,8 +6050,7 @@
             "in": "body",
             "description": "Report time period",
             "schema": {
-              "type": "object",
-              "properties": {}
+              "type": "object"
             }
           },
           {
@@ -5996,8 +6080,7 @@
             "in": "body",
             "description": "Report type",
             "schema": {
-              "type": "object",
-              "properties": {}
+              "type": "object"
             }
           },
           {
@@ -6005,8 +6088,7 @@
             "in": "body",
             "description": "Report time period",
             "schema": {
-              "type": "object",
-              "properties": {}
+              "type": "object"
             }
           },
           {
@@ -7007,8 +7089,7 @@
             "in": "body",
             "description": "Person privacy: 0 - not shared, 1 - shared for reading/writing, 2 - shared for reading only",
             "schema": {
-              "type": "object",
-              "properties": {}
+              "type": "object"
             }
           },
           {
@@ -7192,8 +7273,7 @@
             "in": "body",
             "description": "New person privacy: 0 - not shared, 1 - shared for reading/writing, 2 - shared for reading only",
             "schema": {
-              "type": "object",
-              "properties": {}
+              "type": "object"
             }
           },
           {
@@ -7272,8 +7352,7 @@
             "in": "body",
             "description": "Company privacy: 0 - not shared, 1 - shared for reading/writing, 2 - shared for reading only",
             "schema": {
-              "type": "object",
-              "properties": {}
+              "type": "object"
             }
           },
           {
@@ -7393,8 +7472,7 @@
             "in": "body",
             "description": "New company privacy: 0 - not shared, 1 - shared for reading/writnig, 2 - shared for reading only",
             "schema": {
-              "type": "object",
-              "properties": {}
+              "type": "object"
             }
           },
           {
@@ -8149,8 +8227,7 @@
             "in": "body",
             "description": "New bid type",
             "schema": {
-              "type": "object",
-              "properties": {}
+              "type": "object"
             }
           },
           {
@@ -8535,8 +8612,7 @@
             "in": "body",
             "description": "Bid type",
             "schema": {
-              "type": "object",
-              "properties": {}
+              "type": "object"
             }
           },
           {
@@ -11319,8 +11395,7 @@
             "in": "body",
             "description": "A time interval when the auto-clearing will be performed (one week, two weeks, one month, two months, three months)",
             "schema": {
-              "type": "object",
-              "properties": {}
+              "type": "object"
             }
           }
         ]
@@ -11348,8 +11423,7 @@
             "schema": {
               "type": "array",
               "items": {
-                "type": "object",
-                "properties": {}
+                "type": "object"
               }
             }
           }
@@ -11448,8 +11522,7 @@
             "in": "body",
             "description": "Filter type",
             "schema": {
-              "type": "object",
-              "properties": {}
+              "type": "object"
             }
           },
           {
@@ -11516,8 +11589,7 @@
             "in": "body",
             "description": "Filter type",
             "schema": {
-              "type": "object",
-              "properties": {}
+              "type": "object"
             }
           },
           {
@@ -11568,8 +11640,7 @@
             "in": "body",
             "description": "Filter type",
             "schema": {
-              "type": "object",
-              "properties": {}
+              "type": "object"
             }
           },
           {
@@ -11620,8 +11691,7 @@
             "in": "body",
             "description": "Filter type",
             "schema": {
-              "type": "object",
-              "properties": {}
+              "type": "object"
             }
           },
           {
@@ -11672,8 +11742,7 @@
             "in": "body",
             "description": "Filter type",
             "schema": {
-              "type": "object",
-              "properties": {}
+              "type": "object"
             }
           },
           {
@@ -11724,8 +11793,7 @@
             "in": "body",
             "description": "Filter type",
             "schema": {
-              "type": "object",
-              "properties": {}
+              "type": "object"
             }
           },
           {
@@ -11776,8 +11844,7 @@
             "in": "body",
             "description": "Filter type",
             "schema": {
-              "type": "object",
-              "properties": {}
+              "type": "object"
             }
           },
           {
@@ -11828,8 +11895,7 @@
             "in": "body",
             "description": "Filter type",
             "schema": {
-              "type": "object",
-              "properties": {}
+              "type": "object"
             }
           },
           {
@@ -11880,8 +11946,7 @@
             "in": "body",
             "description": "Filter type",
             "schema": {
-              "type": "object",
-              "properties": {}
+              "type": "object"
             }
           },
           {
@@ -11940,8 +12005,7 @@
             "in": "body",
             "description": "Filter type",
             "schema": {
-              "type": "object",
-              "properties": {}
+              "type": "object"
             }
           },
           {
@@ -13061,8 +13125,7 @@
             "in": "body",
             "description": "Overwriting behavior: skip (0), overwrite (1) or duplicate (2)",
             "schema": {
-              "type": "object",
-              "properties": {}
+              "type": "object"
             }
           },
           {
@@ -13119,8 +13182,7 @@
             "in": "body",
             "description": "Overwriting behavior: skip (0), overwrite (1) or duplicate (2)",
             "schema": {
-              "type": "object",
-              "properties": {}
+              "type": "object"
             }
           },
           {
@@ -13551,8 +13613,7 @@
             "in": "body",
             "description": "Sharing rights",
             "schema": {
-              "type": "object",
-              "properties": {}
+              "type": "object"
             }
           }
         ]
@@ -14065,6 +14126,287 @@
         "description": "Returns a list of all the projects in which the current user participates."
       }
     },
+    "/api/2.0/PrivacyRoomApi/": {
+      "get": {
+        "tags": [
+          "PrivacyRoomApi/Common settings"
+        ],
+        "summary": "Get the portal settings",
+        "description": "Returns a list of all the available portal settings with the current values for each parameter."
+      },
+      "post": {
+        "tags": [
+          "PrivacyRoomApi/Projects"
+        ],
+        "summary": "Create a project",
+        "description": "Creates a new project using all the necessary (title, description, responsible ID, etc) and some optional parameters specified in the request.",
+        "parameters": [
+          {
+            "name": "title",
+            "in": "body",
+            "description": "Project title",
+            "schema": {
+              "type": "String"
+            }
+          },
+          {
+            "name": "description",
+            "in": "body",
+            "description": "Project description",
+            "schema": {
+              "type": "String"
+            }
+          },
+          {
+            "name": "responsibleId",
+            "in": "body",
+            "description": "Project responsible ID",
+            "schema": {
+              "type": "Guid"
+            }
+          },
+          {
+            "name": "tags",
+            "in": "body",
+            "description": "Project tags",
+            "schema": {
+              "type": "String"
+            }
+          },
+          {
+            "name": "private",
+            "in": "body",
+            "description": "Specifies if this project is private or not",
+            "schema": {
+              "type": "Boolean"
+            }
+          },
+          {
+            "name": "participants",
+            "in": "body",
+            "description": "Project participants",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "Guid"
+              }
+            }
+          },
+          {
+            "name": "notify",
+            "in": "body",
+            "description": "Specifies whether to notify a project manager about the project actions or not",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "Boolean"
+              }
+            }
+          },
+          {
+            "name": "tasks",
+            "in": "body",
+            "description": "Project tasks",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "EntityType": {
+                    "type": "string"
+                  },
+                  "ItemPath": {
+                    "type": "string"
+                  },
+                  "Priority": {
+                    "type": "string"
+                  },
+                  "Status": {
+                    "type": "string"
+                  },
+                  "CustomTaskStatus": {
+                    "type": "string"
+                  },
+                  "Milestone": {
+                    "type": "string"
+                  },
+                  "SortOrder": {
+                    "type": "string"
+                  },
+                  "Deadline": {
+                    "type": "string"
+                  },
+                  "SubTasks": {
+                    "type": "string"
+                  },
+                  "Responsibles": {
+                    "type": "string"
+                  },
+                  "Links": {
+                    "type": "string"
+                  },
+                  "MilestoneDesc": {
+                    "type": "string"
+                  },
+                  "StatusChangedOn": {
+                    "type": "string"
+                  },
+                  "StartDate": {
+                    "type": "string"
+                  },
+                  "Security": {
+                    "type": "string"
+                  },
+                  "Progress": {
+                    "type": "string"
+                  },
+                  "Title": {
+                    "type": "string"
+                  },
+                  "Description": {
+                    "type": "string"
+                  },
+                  "HtmlTitle": {
+                    "type": "string"
+                  },
+                  "Project": {
+                    "type": "string"
+                  },
+                  "CreateBy": {
+                    "type": "string"
+                  },
+                  "CreateOn": {
+                    "type": "string"
+                  },
+                  "LastModifiedOn": {
+                    "type": "string"
+                  },
+                  "LastModifiedBy": {
+                    "type": "string"
+                  },
+                  "NotifyId": {
+                    "type": "string"
+                  },
+                  "ID": {
+                    "type": "string"
+                  },
+                  "UniqID": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "name": "milestones",
+            "in": "body",
+            "description": "Project milestones",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "EntityType": {
+                    "type": "string"
+                  },
+                  "ItemPath": {
+                    "type": "string"
+                  },
+                  "Responsible": {
+                    "type": "string"
+                  },
+                  "Status": {
+                    "type": "string"
+                  },
+                  "IsNotify": {
+                    "type": "string"
+                  },
+                  "IsKey": {
+                    "type": "string"
+                  },
+                  "DeadLine": {
+                    "type": "string"
+                  },
+                  "ActiveTaskCount": {
+                    "type": "string"
+                  },
+                  "ClosedTaskCount": {
+                    "type": "string"
+                  },
+                  "StatusChangedOn": {
+                    "type": "string"
+                  },
+                  "Title": {
+                    "type": "string"
+                  },
+                  "Description": {
+                    "type": "string"
+                  },
+                  "HtmlTitle": {
+                    "type": "string"
+                  },
+                  "Project": {
+                    "type": "string"
+                  },
+                  "CreateBy": {
+                    "type": "string"
+                  },
+                  "CreateOn": {
+                    "type": "string"
+                  },
+                  "LastModifiedOn": {
+                    "type": "string"
+                  },
+                  "LastModifiedBy": {
+                    "type": "string"
+                  },
+                  "NotifyId": {
+                    "type": "string"
+                  },
+                  "ID": {
+                    "type": "string"
+                  },
+                  "UniqID": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "name": "notifyResponsibles",
+            "in": "body",
+            "description": "Specifies whether to notify responsibles about the project actions or not",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "Boolean"
+              }
+            }
+          }
+        ]
+      },
+      "delete": {
+        "tags": [
+          "PrivacyRoomApi/Projects"
+        ],
+        "summary": "Delete projects",
+        "description": "Deletes the projects with the IDs specified in the request from the portal.",
+        "parameters": [
+          {
+            "name": "projectids",
+            "in": "body",
+            "description": "List of project IDs",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "Int32"
+              }
+            }
+          }
+        ]
+      }
+    },
     "/api/2.0/PrivacyRoomApi/status/{status}": {
       "get": {
         "tags": [
@@ -14078,8 +14420,7 @@
             "in": "path",
             "description": "User status (\"Active\", \"Terminated\", \"LeaveOfAbsence\", \"All\", or \"Default\")",
             "schema": {
-              "type": "object",
-              "properties": {}
+              "type": "object"
             }
           }
         ]
@@ -14096,8 +14437,7 @@
             "in": "path",
             "description": "New user status (\"Active\", \"Terminated\", \"LeaveOfAbsence\", \"All\", or \"Default\"",
             "schema": {
-              "type": "object",
-              "properties": {}
+              "type": "object"
             }
           },
           {
@@ -14224,8 +14564,7 @@
             "in": "path",
             "description": "User status (\"Active\", \"Terminated\", \"LeaveOfAbsence\", \"All\", or \"Default\")",
             "schema": {
-              "type": "object",
-              "properties": {}
+              "type": "object"
             }
           },
           {
@@ -14352,8 +14691,7 @@
             "schema": {
               "type": "array",
               "items": {
-                "type": "object",
-                "properties": {}
+                "type": "object"
               }
             }
           },
@@ -14375,8 +14713,7 @@
             "schema": {
               "type": "array",
               "items": {
-                "type": "object",
-                "properties": {}
+                "type": "object"
               }
             }
           },
@@ -14387,8 +14724,7 @@
             "schema": {
               "type": "array",
               "items": {
-                "type": "object",
-                "properties": {}
+                "type": "object"
               }
             }
           },
@@ -14871,8 +15207,7 @@
             "in": "path",
             "description": "New user type (\"All\", \"User\", or \"Visitor\")",
             "schema": {
-              "type": "object",
-              "properties": {}
+              "type": "object"
             }
           },
           {
@@ -16178,8 +16513,7 @@
             "in": "body",
             "description": "Sharing mode for the links of the attached files",
             "schema": {
-              "type": "object",
-              "properties": {}
+              "type": "object"
             }
           },
           {
@@ -17157,8 +17491,7 @@
             "schema": {
               "type": "array",
               "items": {
-                "type": "object",
-                "properties": {}
+                "type": "object"
               }
             }
           },
@@ -17746,8 +18079,7 @@
             "in": "body",
             "description": "Encryption type for the IMAP or POP server: 0 - None, 1 - SSL, 2 - StartTLS",
             "schema": {
-              "type": "object",
-              "properties": {}
+              "type": "object"
             }
           },
           {
@@ -17755,8 +18087,7 @@
             "in": "body",
             "description": "Encryption type for the SMTP server: 0 - None, 1 - SSL, 2 - StartTLS",
             "schema": {
-              "type": "object",
-              "properties": {}
+              "type": "object"
             }
           },
           {
@@ -17764,8 +18095,7 @@
             "in": "body",
             "description": "Authentication type for the IMAP or POP server: 0 - None, 1 - Login, 4 - CramMd5, 5 - OAuth2",
             "schema": {
-              "type": "object",
-              "properties": {}
+              "type": "object"
             }
           },
           {
@@ -17773,8 +18103,7 @@
             "in": "body",
             "description": "Authentication type for the SMTP server: 0 - None, 1 - Login, 4 - CramMd5, 5 - OAuth2",
             "schema": {
-              "type": "object",
-              "properties": {}
+              "type": "object"
             }
           }
         ]
@@ -17887,8 +18216,7 @@
             "in": "body",
             "description": "New encryption type for the IMAP or POP server: 0 - None, 1 - SSL, 2 - StartTLS",
             "schema": {
-              "type": "object",
-              "properties": {}
+              "type": "object"
             }
           },
           {
@@ -17896,8 +18224,7 @@
             "in": "body",
             "description": "New encryption type for the SMTP server: 0 - None, 1 - SSL, 2 - StartTLS",
             "schema": {
-              "type": "object",
-              "properties": {}
+              "type": "object"
             }
           },
           {
@@ -17905,8 +18232,7 @@
             "in": "body",
             "description": "New authentication type for the IMAP or POP server: 0 - None, 1 - Login, 4 - CramMd5, 5 - OAuth2",
             "schema": {
-              "type": "object",
-              "properties": {}
+              "type": "object"
             }
           },
           {
@@ -17914,8 +18240,7 @@
             "in": "body",
             "description": "New authentication type for the SMTP server: 0 - None, 1 - Login, 4 - CramMd5, 5 - OAuth2",
             "schema": {
-              "type": "object",
-              "properties": {}
+              "type": "object"
             }
           }
         ]
@@ -18288,8 +18613,7 @@
             "in": "body",
             "description": "Information type",
             "schema": {
-              "type": "object",
-              "properties": {}
+              "type": "object"
             }
           },
           {
@@ -19692,8 +20016,7 @@
             "in": "path",
             "description": "Employee type (User or Visitor)",
             "schema": {
-              "type": "object",
-              "properties": {}
+              "type": "object"
             }
           }
         ]
@@ -19766,8 +20089,7 @@
             "in": "body",
             "description": "Storage type (\"Documents\", \"ThridpartyDocuments\", \"CustomCloud\", \"Local\", \"DataStore\", or \"ThirdPartyConsumer\")",
             "schema": {
-              "type": "object",
-              "properties": {}
+              "type": "object"
             }
           },
           {
@@ -19841,8 +20163,7 @@
             "in": "body",
             "description": "Storage type (\"Documents\", \"ThridpartyDocuments\", \"CustomCloud\", \"Local\", \"DataStore\", or \"ThirdPartyConsumer\")",
             "schema": {
-              "type": "object",
-              "properties": {}
+              "type": "object"
             }
           },
           {
@@ -19934,8 +20255,7 @@
             "in": "body",
             "description": "Storage type (\"Documents\", \"ThridpartyDocuments\", \"CustomCloud\", \"Local\", \"DataStore\", or \"ThirdPartyConsumer\")",
             "schema": {
-              "type": "object",
-              "properties": {}
+              "type": "object"
             }
           },
           {
@@ -21009,8 +21329,7 @@
             "in": "body",
             "description": "Link type",
             "schema": {
-              "type": "object",
-              "properties": {}
+              "type": "object"
             }
           }
         ]
@@ -22435,8 +22754,7 @@
             "schema": {
               "type": "array",
               "items": {
-                "type": "object",
-                "properties": {}
+                "type": "object"
               }
             }
           }
@@ -22631,8 +22949,7 @@
             "in": "body",
             "description": "New message status (\"Open\" or \"Archived\")",
             "schema": {
-              "type": "object",
-              "properties": {}
+              "type": "object"
             }
           }
         ]
@@ -22935,8 +23252,7 @@
             "in": "body",
             "description": "Report type",
             "schema": {
-              "type": "object",
-              "properties": {}
+              "type": "object"
             }
           },
           {
@@ -22987,8 +23303,7 @@
             "in": "body",
             "description": "Report time interval",
             "schema": {
-              "type": "object",
-              "properties": {}
+              "type": "object"
             }
           },
           {
@@ -23111,8 +23426,7 @@
             "in": "body",
             "description": "New report type",
             "schema": {
-              "type": "object",
-              "properties": {}
+              "type": "object"
             }
           },
           {
@@ -23163,8 +23477,7 @@
             "in": "body",
             "description": "New report time interval",
             "schema": {
-              "type": "object",
-              "properties": {}
+              "type": "object"
             }
           },
           {
@@ -24314,8 +24627,7 @@
             "in": "body",
             "description": "Security rights",
             "schema": {
-              "type": "object",
-              "properties": {}
+              "type": "object"
             }
           },
           {
@@ -24598,8 +24910,7 @@
             "in": "body",
             "description": "Action",
             "schema": {
-              "type": "object",
-              "properties": {}
+              "type": "object"
             }
           },
           {
@@ -24642,8 +24953,7 @@
             "in": "body",
             "description": "Product",
             "schema": {
-              "type": "object",
-              "properties": {}
+              "type": "object"
             }
           },
           {
@@ -24651,8 +24961,7 @@
             "in": "body",
             "description": "Module",
             "schema": {
-              "type": "object",
-              "properties": {}
+              "type": "object"
             }
           },
           {
@@ -24660,8 +24969,7 @@
             "in": "body",
             "description": "Action type",
             "schema": {
-              "type": "object",
-              "properties": {}
+              "type": "object"
             }
           },
           {
@@ -24669,8 +24977,7 @@
             "in": "body",
             "description": "Action",
             "schema": {
-              "type": "object",
-              "properties": {}
+              "type": "object"
             }
           },
           {
@@ -24678,8 +24985,7 @@
             "in": "body",
             "description": "Entry",
             "schema": {
-              "type": "object",
-              "properties": {}
+              "type": "object"
             }
           },
           {
@@ -24733,8 +25039,7 @@
             "schema": {
               "type": "array",
               "items": {
-                "type": "object",
-                "properties": {}
+                "type": "object"
               }
             }
           },
@@ -24745,8 +25050,7 @@
             "schema": {
               "type": "array",
               "items": {
-                "type": "object",
-                "properties": {}
+                "type": "object"
               }
             }
           }
@@ -24936,8 +25240,7 @@
             "in": "body",
             "description": "Specifies for whom impersonation is enabled (DisableForAdmins, EnableForAllFullAdmins, or EnableWithLimits)",
             "schema": {
-              "type": "object",
-              "properties": {}
+              "type": "object"
             }
           },
           {
@@ -25089,8 +25392,7 @@
             "in": "body",
             "description": "TFA type (None, Sms, or App)",
             "schema": {
-              "type": "object",
-              "properties": {}
+              "type": "object"
             }
           },
           {
