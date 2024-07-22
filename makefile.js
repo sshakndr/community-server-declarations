@@ -221,7 +221,7 @@ async function downloadFile(u, p) {
 function process(p, c) {
   let isInvalid = false
 
-  if (c.path === undefined || c.path === null || c.path === "") {
+  if (c.path === undefined || c.path === null) {
     console.warn("path is missing")
     isInvalid = true
     c.path = ""
@@ -320,6 +320,7 @@ function process(p, c) {
       } else {
         if (o.in === "body") {
           // todo: wait for the content-type
+          parameters.push(o)
         } else {
           parameters.push(o)
         }
@@ -329,6 +330,40 @@ function process(p, c) {
 
   if (parameters.length > 0) {
     object.parameters = parameters
+  }
+
+  if(!(c.returns == null || c.returns == undefined)) {
+    console.info(`processing response`)
+    let isInvalid = false
+
+    const o = {}
+
+    const d = processDescription(c.returns)
+    if (d !== "") {
+      o.description = d
+    }
+
+    const s = processSchema(c.returns)
+    if (s === undefined) {
+      console.warn("type is missing")
+      isInvalid = true
+    } else {
+      // todo: wait for the content-type
+      o.content = {
+        "application/json": {
+          schema: s
+        }
+      }
+      o.content["application/json"].schema = s
+    }
+
+    if (isInvalid) {
+      console.warn("failed to set response")
+    } else {
+      object.responses = {
+        "200": o
+      }
+    }
   }
 
   if (isInvalid) {
@@ -373,12 +408,39 @@ function processSchema(o) {
     return undefined
   }
 
+  if (o.type.name.endsWith("[]")) {
+    const s = {
+      type: "array",
+      items: processSchema({...o, type: {...o.type, name: o.type.name.slice(0, -2)}})
+    }
+
+    return s
+  }
+
   // todo: replace with p.type === "object"
   if (!(o.type.properties === undefined || o.type.properties === null)) {
+    const p = {}
+    o.type.properties.forEach(e => {
+      // todo: wait for object properties types
+      p[e.name] = processSchema({type: {name: "string"}})
+    });
+
     const s = {
       type: "object"
     }
+    if (o.type.properties.length > 0) {
+      s.properties = p
+    }
     // const properties = o.type.flatMap((p) => {})
+    return s
+  }
+
+  if (!(o.type.name === undefined || o.type.name === null)) {
+    const s = {
+      // todo: wait for example and property description
+      type: o.type.name
+    }
+
     return s
   }
 
