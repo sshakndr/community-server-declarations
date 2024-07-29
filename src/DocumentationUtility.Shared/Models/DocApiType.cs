@@ -9,9 +9,11 @@ namespace DocumentationUtility.Shared.Models
     {
         public List<DocApiProperty> Properties { get; protected set; } = new List<DocApiProperty>();
 
-        public DocApiType(Type type) : base(type)
+        public DocApiType(Type type, List<string> parents = null, string forceName = null) : base(type)
         {
             this.type = type;
+
+            if (forceName != null) Name = forceName;
 
             ParseXml();
 
@@ -29,10 +31,10 @@ namespace DocumentationUtility.Shared.Models
                 Name = $"String{(i == -1 ? "" : Name.Substring(i, Name.Length))}";
             }
 
-            ParseProperties();
+            ParseProperties(parents);
         }
 
-        private void ParseProperties()
+        private void ParseProperties(List<string> parents)
         {
             if (type.FullName.StartsWith("System."))
             {
@@ -41,7 +43,7 @@ namespace DocumentationUtility.Shared.Models
             }
             foreach (var props in type.GetProperties())
             {
-                Properties.Add(new DocApiProperty(this, props));
+                Properties.Add(new DocApiProperty(this, props, parents));
             }
         }
 
