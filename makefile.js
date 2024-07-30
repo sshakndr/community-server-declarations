@@ -422,7 +422,7 @@ function processSchema(o) {
     const p = {}
     o.type.properties.forEach(e => {
       // todo: wait for object properties types
-      p[e.name] = processSchema({type: {name: "string"}})
+      p[e.name] = processSchema(e)
     });
 
     const s = {
