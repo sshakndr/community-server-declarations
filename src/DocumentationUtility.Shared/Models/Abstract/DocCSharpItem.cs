@@ -1,4 +1,5 @@
 ﻿using DocumentationUtility.Shared.XmlDocs;
+using Newtonsoft.Json;
 using System.IO;
 using System.Reflection;
 using System.Xml;
@@ -11,8 +12,7 @@ namespace DocumentationUtility.Shared.Models.Abstract
         public string Description { get; protected set; }
         public string Remarks { get; protected set; }
 
-        // ToDo: do not even export those to json
-        // ToDo: do not go through system types like String
+        [JsonIgnore]
         public bool IsVisible { get; protected set; } = true;
 
         public DocCSharpItem(MemberInfo type)
