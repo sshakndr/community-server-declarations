@@ -243,19 +243,19 @@ function process(p, c) {
   const object = {}
 
   if (c.isVisible === false) {
-    console.warn("is not visible")
+    console.warn(`${endpoint} is not visible`)
     isInvalid = true
   }
 
   if (c.category === undefined || c.category === null || c.category === "") {
-    console.warn("category is missing")
+    console.warn(`${endpoint} category is missing`)
     isInvalid = true
   } else {
     object.tags = [`${p.path}/${c.category}`]
   }
 
   if (c.shortDescription === undefined || c.shortDescription === null || c.shortDescription === "") {
-    console.warn("short description is missing")
+    console.warn(`${endpoint} short description is missing`)
     isInvalid = true
   } else {
     object.summary = c.shortDescription
@@ -267,7 +267,7 @@ function process(p, c) {
   }
 
   if (object.description === undefined) {
-    console.warn("failed to set description")
+    console.warn(`${endpoint} failed to set description`)
     isInvalid = true
   }
 
