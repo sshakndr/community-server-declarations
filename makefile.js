@@ -249,7 +249,8 @@ function process(p, c) {
 
   if (c.category === undefined || c.category === null || c.category === "") {
     console.warn(`${endpoint} category is missing`)
-    isInvalid = true
+    object.tags = [`${p.path}`]
+    // isInvalid = true
   } else {
     object.tags = [`${p.path}/${c.category}`]
   }
