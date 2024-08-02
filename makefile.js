@@ -87,6 +87,11 @@ async function build() {
       new Ignore({filter: /^\d+\.apiMethods\.\d+\./}),
       new StreamArray(),
       (ch) => {
+        if (ch.value.apiMethods.length <= 0) {
+          console.warn(`${ch.value.path} is missing api methods`)
+          return;
+        }
+
         parents.push({
           path: ch.value.path,
           length: ch.value.apiMethods.length
