@@ -1,7 +1,6 @@
 ﻿using ASC.Api.Attributes;
 using DocumentationUtility.Shared.Models;
 using DocumentationUtility.Shared.Statistics;
-using System;
 using System.Linq;
 using System.Reflection;
 using System.Xml.Linq;
@@ -10,9 +9,9 @@ namespace DocumentationUtility.Portals.Models
 {
     public class PortalApiMethod : DocApiMethod
     {
-        public PortalApiMethod(DocApiController controller, MethodInfo type) : base(controller, type)
-        {
-        }
+        public bool RequiresAuthorization { get; protected set; } = true;
+
+        public PortalApiMethod(DocApiController controller, MethodInfo type) : base(controller, type) { }
 
         protected override void ParseReflection()
         {
@@ -32,8 +31,11 @@ namespace DocumentationUtility.Portals.Models
                 case "path":
                 case "httpMethod":
                 case "collection":
-                case "requiresAuthorization":
                     return true; // ignore those, we are parsing them via reflection
+
+                case "requiresAuthorization":
+                    RequiresAuthorization = element.Value.ToLower().Trim() != "false";
+                    return true;
 
                 case "param":
                     Parameters.Add(new DocApiParameter(this, type.GetParameters().FirstOrDefault(p => p.Name == element.Attribute("name").Value), element.Value.Trim()));

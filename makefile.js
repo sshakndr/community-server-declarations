@@ -112,7 +112,16 @@ async function build() {
       title: "Community Server REST API",
       version: "latest"
     },
-    paths: {}
+    paths: {},
+    components: {
+      securitySchemes: {
+        AuthorizationHeader: {
+          type: "apiKey",
+          in: "header",
+          name: "Authorization"
+        }
+      }
+    }
   }
 
   let i = 0
@@ -255,6 +264,17 @@ function process(p, c) {
     object.tags = [`${p.path}/${c.category}`]
   }
 
+  if (c.requiresAuthorization !== false) {
+    object.security = [
+      {
+        AuthorizationHeader: [
+          "read",
+          "write"
+        ]
+      }
+    ]
+  }
+
   if (c.shortDescription === undefined || c.shortDescription === null || c.shortDescription === "") {
     console.warn(`${endpoint} short description is missing`)
     isInvalid = true
@@ -368,6 +388,10 @@ function process(p, c) {
     } else {
       object.responses = {
         "200": o
+      }
+
+      if (object.security) {
+        object.responses["401"] = { description: "Unauthorized" }
       }
     }
   }
