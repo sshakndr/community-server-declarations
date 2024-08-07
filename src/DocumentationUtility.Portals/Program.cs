@@ -40,7 +40,9 @@ public class Program
 
         foreach (var controller in controllers)
         {
-            result.Add(new PortalApiController(controller));
+            var apiController = new PortalApiController(controller);
+            if (!apiController.IsVisible) continue;
+            result.Add(apiController);
         }
 
         JsonRenderer.RenderApiControllers(result.Cast<DocApiController>().ToList(), "json_out", "portals.json");
