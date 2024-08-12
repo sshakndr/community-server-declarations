@@ -466,9 +466,80 @@ function processSchema(o) {
   }
 
   if (!(o.type.name === undefined || o.type.name === null)) {
-    const s = {
-      // todo: wait for example and property description
-      type: o.type.name
+    const s = { }
+
+    switch (o.type.name) {
+      case "String":
+        s.type = "string"
+        break
+
+      case "Guid":
+        s.type = "string"
+        s.format = "uuid"
+        break
+
+      case "Boolean":
+        s.type = "boolean"
+        break
+
+      case "Object":
+        s.type = "object"
+        break
+
+      case "HttpPostedFileBase":
+        s.type = "string"
+        s.format = "binary"
+        break
+
+      case "Single":
+      case "Double":
+      case "Decimal":
+        s.type = "number"
+        s.format = "double"
+        break
+
+      case "TimeSpan":
+        s.type = "string"
+        s.format = "timespan"
+        break
+
+      case "DateTime":
+        s.type = "string"
+        s.format = "date-time"
+        break
+
+      case "UInt64":
+        s.type = "integer"
+        s.format = "uint64"
+        break
+
+      case "Int64":
+        s.type = "integer"
+        s.format = "int64"
+        break
+
+      case "UInt32":
+        s.type = "integer"
+        s.format = "uint32"
+        break
+
+      case "Int32":
+        s.type = "integer"
+        s.format = "int32"
+
+        if (o.type.enumValues) {
+          s.enum = o.type.enumValues
+          s.description = o.type.description
+        }
+
+        break
+
+      case "Void":
+        return undefined
+
+      default:
+        console.warn(`unknown type ${o.type.name}`)
+        s.type = "object"
     }
 
     return s
