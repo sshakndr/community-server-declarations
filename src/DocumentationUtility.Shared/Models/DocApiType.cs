@@ -8,6 +8,7 @@ namespace DocumentationUtility.Shared.Models
     public class DocApiType : DocCSharpItem
     {
         public List<DocApiProperty> Properties { get; protected set; } = new List<DocApiProperty>();
+        public List<string> EnumValues { get; protected set; } = null;
 
         public DocApiType(Type type, List<string> parents = null, string forceName = null) : base(type)
         {
@@ -17,18 +18,33 @@ namespace DocumentationUtility.Shared.Models
 
             ParseXml();
 
-            if (Name.ToString().Contains("`"))
+            if (type.IsEnum)
             {
-                var n = GetGenericType(this.type);
-                this.type = n.type;
-                Name = n.Name;
+                this.type = typeof(int);
+                Name = this.type.Name;
+                var enumValues = new List<string>();
+                foreach (var v in Enum.GetValues(type))
+                {
+                    enumValues.Add($"{(int)v} - {v}");
+                }
+                Description = $"[{string.Join(", ", enumValues)}]";
+                EnumValues = Enum.GetNames(type).ToList();
             }
-
-            if (this.type.GetCustomAttributes(false).Where(a => a.GetType().Name == "TypeConverterAttribute").Count() != 0)
+            else
             {
-                this.type = typeof(String);
-                var i = Name.IndexOf('[');
-                Name = $"String{(i == -1 ? "" : Name.Substring(i, Name.Length))}";
+                if (Name.ToString().Contains("`"))
+                {
+                    var n = GetGenericType(this.type);
+                    this.type = n.type;
+                    Name = n.Name;
+                }
+
+                if (this.type.GetCustomAttributes(false).Where(a => a.GetType().Name == "TypeConverterAttribute").Count() != 0)
+                {
+                    this.type = typeof(string);
+                    var i = Name.IndexOf('[');
+                    Name = $"String{(i == -1 ? "" : Name.Substring(i, Name.Length))}";
+                }
             }
 
             ParseProperties(parents);
@@ -72,13 +88,13 @@ namespace DocumentationUtility.Shared.Models
                     }
                 case 2:
                     {
-                        n = new DocApiType(typeof(Object));
+                        n = new DocApiType(typeof(object));
                         n.Name = $"<{t[0].Name}, {t[1].Name}>";
                         return n;
                     }
-                default: 
+                default:
                     {
-                        n = new DocApiType(typeof(Object));
+                        n = new DocApiType(typeof(object));
                         n.Name = "untracked_generic";
                         return n;
                     }
