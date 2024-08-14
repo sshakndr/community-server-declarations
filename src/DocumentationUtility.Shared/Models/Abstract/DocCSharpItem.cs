@@ -11,6 +11,7 @@ namespace DocumentationUtility.Shared.Models.Abstract
     {
         public string Description { get; protected set; }
         public string Remarks { get; protected set; }
+        public string Example { get; protected set; }
 
         [JsonIgnore]
         public bool IsVisible { get; protected set; } = true;
@@ -61,6 +62,10 @@ namespace DocumentationUtility.Shared.Models.Abstract
 
                 case "remarks":
                     Remarks = element.Value.Trim();
+                    return true;
+
+                case "example":
+                    Example = element.Value.Trim();
                     return true;
 
                 case "visible":
