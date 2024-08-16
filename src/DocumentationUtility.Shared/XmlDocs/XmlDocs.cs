@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Reflection;
+using System.Text;
 using System.Text.RegularExpressions;
 using System.Xml;
 
@@ -122,7 +123,8 @@ namespace DocumentationUtility.Shared.XmlDocs
             var typeGenericMap = new Dictionary<string, int>();
             var tempTypeGeneric = 0;
 
-            Array.ForEach(methodInfo.DeclaringType.GetGenericArguments(),  x => {
+            Array.ForEach(methodInfo.DeclaringType.GetGenericArguments(), x =>
+            {
                 if (x.FullName == null) return;
                 typeGenericMap[x.FullName] = tempTypeGeneric++;
             });
@@ -195,44 +197,68 @@ namespace DocumentationUtility.Shared.XmlDocs
             return null;
         }
 
+        private readonly static Regex inheritedRegex = new Regex(@"<inherited>(.*), (.*)<\/inherited>");
         public static string GetDocumentation(this MemberInfo memberInfo)
         {
+            string docs = null;
+
             if (memberInfo.MemberType.HasFlag(MemberTypes.Field))
             {
-                return ((FieldInfo)memberInfo).GetDocumentation();
+                docs = ((FieldInfo)memberInfo).GetDocumentation();
             }
             else if (memberInfo.MemberType.HasFlag(MemberTypes.Property))
             {
-                return ((PropertyInfo)memberInfo).GetDocumentation();
+                docs = ((PropertyInfo)memberInfo).GetDocumentation();
             }
             else if (memberInfo.MemberType.HasFlag(MemberTypes.Event))
             {
-                return ((EventInfo)memberInfo).GetDocumentation();
+                docs = ((EventInfo)memberInfo).GetDocumentation();
             }
             else if (memberInfo.MemberType.HasFlag(MemberTypes.Constructor))
             {
-                return ((ConstructorInfo)memberInfo).GetDocumentation();
+                docs = ((ConstructorInfo)memberInfo).GetDocumentation();
             }
             else if (memberInfo.MemberType.HasFlag(MemberTypes.Method))
             {
-                return ((MethodInfo)memberInfo).GetDocumentation();
+                docs = ((MethodInfo)memberInfo).GetDocumentation();
             }
             else if (memberInfo.MemberType.HasFlag(MemberTypes.TypeInfo) ||
                 memberInfo.MemberType.HasFlag(MemberTypes.NestedType))
             {
-                return ((TypeInfo)memberInfo).GetDocumentation();
+                docs = ((TypeInfo)memberInfo).GetDocumentation();
             }
-            else
+
+            if (docs != null)
             {
-                return null;
+                var match = inheritedRegex.Match(docs);
+                if (match.Success)
+                {
+                    var inheritedDocs = GetInheritedDocs(match.Groups[1].Value, match.Groups[2].Value);
+                    if (inheritedDocs != null)
+                    {
+                        docs += inheritedDocs;
+                    }
+                }
             }
+
+            return docs;
+        }
+
+        private static string GetInheritedDocs(string fullname, string assemblyname)
+        {
+            var assembly = LoadedAssemblies.FirstOrDefault(a => a.FullName.Split(',')[0] == assemblyname);
+            if (assembly == null) return null;
+
+            var type = assembly.GetExportedTypes().FirstOrDefault(t => t.FullName == fullname);
+
+            return GetDocumentation((MemberInfo)type);
         }
 
         private static string ParseGeneric(Type type)
         {
             var arguments = type.GetGenericArguments();
             string innerType = "";
-            foreach (var a in arguments) 
+            foreach (var a in arguments)
             {
                 if (a.IsGenericType) innerType += ParseGeneric(a);
                 else innerType += a.FullName + ",";
